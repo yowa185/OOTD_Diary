@@ -87,6 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       goTo("page3");
+      requestAnimationFrame(() => enterPage3());
     });
   }
 
@@ -177,6 +178,7 @@ function startTypingPage2() {
 }
 // page3 진입
 function enterPage3(){
+  
   const guide = document.getElementById("page3Guide");
   if(guide){
     guide.style.display = "flex";  // ⭐ 진입 시 안내 표시
@@ -261,6 +263,9 @@ function clearFaceStateForNewSession() {
    ⭐ PAGE4 진입 (최종 안정)
 ===================== */
 function enterPage4() {
+  const guide = document.getElementById("page4Guide");
+  if(guide){
+    guide.style.display = "flex";}
 
   /* ===== 이름 ===== */
   const nameEl =
