@@ -1,0 +1,2632 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=no"
+  />
+  <title>OOTD Diary</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="viewport">
+
+    <!-- ================= MAIN PAGE ================= -->
+    <div class="screen main active">
+      
+      <img src="assets/page_main/check.svg" class="bg-check" alt="" />
+
+      <img src="assets/page_main/main_logo.svg" class="logo pulse" />
+
+      <img src="assets/page_main/main_cherry.svg" class="icon main_cherry float" />
+      <img src="assets/page_main/main_dog.svg" class="icon main_dog" />
+      <img src="assets/page_main/main_footprint.svg" class="icon main_footprint" />
+      <img src="assets/page_main/main_heartwing.svg" class="icon main_heartwing float" />
+      <img src="assets/page_main/main_musicmark.svg" class="icon main_musicmark float" />
+      <img src="assets/page_main/main_pencil.svg" class="icon main_pencil" />
+      <img src="assets/page_main/main_twinkle.svg" class="icon main_twinkle float" />
+      <img src="assets/page_main/main_wing_left.svg" class="icon main_wing_left float" />
+      <img src="assets/page_main/main_wing_right.svg" class="icon main_wing_right float" />
+      <img src="assets/page_main/main_star_pink_big.svg" class="icon main_star_pink_big float" />
+      <img src="assets/page_main/main_star_pink_small.svg" class="icon main_star_pink_small float" />
+      <img src="assets/page_main/main_star_sky_big.svg" class="icon main_star_sky_big float" />
+      <img src="assets/page_main/main_star_sky_small.svg" class="icon main_star_sky_small float" />
+
+      <div class="start-wrap pulse">
+    <img src="assets/page_main/main_start.svg" class="start-btn" />
+    <span class="start-text">시작하기</span>
+  </div>
+</div>
+
+    <!-- ================= LOADING PAGE ================= -->
+    <div class="screen loading">
+      <img src="assets/page_main/check.svg" class="bg-check" />
+
+      <div class="loading-dogs">
+        <img src="assets/page_loading/loading_dog1.svg" class="dog d1" />
+        <img src="assets/page_loading/loading_dog2.svg" class="dog d2" />
+        <img src="assets/page_loading/loading_dog3.svg" class="dog d3" />
+        <img src="assets/page_loading/loading_dog4.svg" class="dog d4" />
+      </div>
+    </div>
+
+    <!-- ================= PAGE 2 ================= -->
+    <div class="screen page2">
+      <img src="assets/page_main/check.svg" class="bg-check" />
+
+      <img src="assets/page_2/note.svg" class="note" />
+
+      <img src="assets/page_2/2_footprint_1.svg" class="footprints_1" />
+      <img src="assets/page_2/2_footprint_2.svg" class="footprints_2" />
+
+      <img src="assets/page_2/2_dogs.svg" class="page2-dogs" />
+      <img src="assets/page_2/2_pencil.svg" class="pencil" />
+      <img src="assets/page_2/2_heartwing.svg" class="page2_heartwing" />
+
+      <div class="typing-area">
+
+        <!-- 1문단 -->
+        <div class="typing-line center">
+          <img src="assets/page_2/2_dog1.svg" class="typing-emoji" id="e1" />
+          <span class="typing-text" id="t1"></span>
+          <img src="assets/page_2/2_dog2.svg" class="typing-emoji" id="e2" />
+        </div>
+      
+        <div class="typing-line center">
+          <span class="typing-text" id="t2"></span>
+        </div>
+      
+        <!-- 간격 -->
+        <div class="typing-gap"></div>
+      
+        <!-- 2문단 -->
+        <div class="typing-line center">
+          <span class="typing-text" id="t3"></span>
+        </div>
+      
+        <div class="typing-line center">
+          <span class="typing-text" id="t4"></span>
+          <img src="assets/page_2/2_dog3.svg" class="typing-emoji" id="e3" />
+        </div>
+      
+        <div class="typing-line center">
+          <span class="typing-text" id="t5"></span>
+        </div>
+      
+        <div class="typing-gap"></div>
+      
+        <!-- 3문단 -->
+        <div class="typing-line center">
+          <span class="typing-text" id="t6"></span>
+        </div>
+      
+        <div class="typing-line center">
+          <span class="typing-text" id="t7"></span>
+        </div>
+      
+        <div class="typing-line center">
+          <span class="typing-text" id="t8"></span>
+          <img src="assets/page_2/2_dog4.svg" class="typing-emoji" id="e4" />
+        </div>
+      
+        <div class="typing-gap"></div>
+      
+        <!-- 마지막 문장 -->
+        <div class="typing-line center">
+          <span class="typing-text" id="t9"></span>
+        </div>
+      
+      </div>
+      
+
+      <div class="name-area">
+        <img src="assets/page_2/namebutton.svg" class="name-bg" />
+
+        <input
+          type="text"
+          class="name-input"
+          placeholder="이름을 알려줘"
+          maxlength="10"
+        />
+
+        <button class="next-btn disabled">
+          <img src="assets/page_2/2_nextbutton.svg" />
+        </button>
+      </div>
+    </div>
+
+  <!-- ================= PAGE 3 ================= -->
+<div class="screen page3" id="page3">
+
+  <img src="assets/page_main/check.svg" class="bg-check" />
+
+  <div class="p3-note-area">
+    <img src="assets/page_2/note.svg" class="note-bg" />
+
+    <div class="p3-note-content">
+
+      <!-- DATE -->
+      <div class="p3-date" id="todayDate"></div>
+
+      <!-- 제목 -->
+     <div class="p3-title">
+  <div class="p3-name-pill">
+    <span id="userName" class="p3-name-text">이름</span>
+  </div>
+  <span class="p3-title-text">의 오오티디</span>
+</div>
+
+      <!-- 캐릭터 -->
+      <div class="p3-character-area">
+        <img id="body"
+             src="assets/page_3/character/body_skin_1.svg"
+             class="p3-char" />
+
+        <img src="assets/page_3/character/underwear_basic.svg"
+             class="p3-char" />
+
+        <img src="assets/page_3/character/eye_basic.svg"
+             class="p3-char" />
+      </div>
+
+      <!-- 스킨 칩 -->
+      <div class="p3-skin-chips">
+
+        <button class="p3-chip active" data-skin="1">
+          <img src="assets/page_3/skinchip/skin_chip_1.svg" />
+          <img src="assets/page_3/ui/paw.svg" class="p3-paw" />
+        </button>
+
+        <button class="p3-chip" data-skin="2">
+          <img src="assets/page_3/skinchip/skin_chip_2.svg" />
+          <img src="assets/page_3/ui/paw.svg" class="p3-paw" />
+        </button>
+
+        <button class="p3-chip" data-skin="3">
+          <img src="assets/page_3/skinchip/skin_chip_3.svg" />
+          <img src="assets/page_3/ui/paw.svg" class="p3-paw" />
+        </button>
+
+        <button class="p3-chip" data-skin="4">
+          <img src="assets/page_3/skinchip/skin_chip_4.svg" />
+          <img src="assets/page_3/ui/paw.svg" class="p3-paw" />
+        </button>
+
+      </div>
+
+      <!-- 다음 버튼 -->
+      <img src="assets/page_3/ui/next_button.svg" class="p3-next-btn" />
+
+    </div>
+  </div>
+  <!-- =====================
+  안내 오버레이 (튜토리얼)
+===================== -->
+<div class="guide-overlay" id="page3Guide">
+  <div class="guide-dim"></div>
+
+  <!-- 안내 이미지 -->
+  <img src="assets/page_3/ui/p3_guide.svg" class="guide-image" />
+
+  <!-- 닫기 버튼 -->
+  <button class="guide-close" onclick="closeGuide('page3Guide')">✕</button>
+</div>
+</div>
+
+
+<!-- ================= PAGE 4 ================= -->
+<div class="screen page4">
+
+  <!-- 체크배경 (구조 유지용) -->
+  <img src="assets/page_main/check.svg" class="bg-check">
+
+  <div class="p4-wrap">
+
+    <!-- ================= 제목 ================= -->
+     <div class="p4-title">
+  <div class="p4-name-pill">
+    <span id="p4UserName" class="p4-name-text">이름</span>
+  </div>
+  <span class="p4-title-text">의 오오티디</span>
+</div>
+
+    <!-- ================= 캐릭터 ================= -->
+   <div class="character-wrap">
+    <div class="p4-character">
+
+      <!-- BASE (항상 존재) -->
+    <img id="p4-body"
+    src="assets/page_4/character/body_skin_1.svg"
+    class="p4-layer">
+
+    <img id="p4-under"
+    src="assets/page_3/character/underwear_basic.svg"
+    class="p4-layer">
+
+      <!-- 눈 -->
+      <div class="p4-eyes">
+
+        <img class="eye base-eye show" src="assets/page_4/eye/eye_basic.svg" />
+        <img src="assets/page_4/eye/eye_basic.svg" class="eye">
+        <img src="assets/page_4/eye/eye_angry.svg" class="eye">
+        <img src="assets/page_4/eye/eye_beady.svg" class="eye">
+        <img src="assets/page_4/eye/eye_blank.svg" class="eye">
+        <img src="assets/page_4/eye/eye_cry.svg" class="eye">
+        <img src="assets/page_4/eye/eye_dead.svg" class="eye">
+        <img src="assets/page_4/eye/eye_dizzy.svg" class="eye">
+        <img src="assets/page_4/eye/eye_flat.svg" class="eye">
+        <img src="assets/page_4/eye/eye_happy.svg" class="eye">
+        <img src="assets/page_4/eye/eye_heart.svg" class="eye">
+        <img src="assets/page_4/eye/eye_puppy.svg" class="eye">
+        <img src="assets/page_4/eye/eye_sad.svg" class="eye">
+        <img src="assets/page_4/eye/eye_shy.svg" class="eye">
+        <img src="assets/page_4/eye/eye_sus.svg" class="eye">
+        <img src="assets/page_4/eye/eye_teary.svg" class="eye">
+        <img src="assets/page_4/eye/eye_tired.svg" class="eye">
+        <img src="assets/page_4/eye/eye_twinkle.svg" class="eye">
+        <img src="assets/page_4/eye/eye_wink.svg" class="eye">
+      </div>
+
+      <!-- 볼 -->
+      <div class="p4-cheeks">
+        <img src="assets/page_4/cheek/cheek_1.svg" class="cheek">
+        <img src="assets/page_4/cheek/cheek_2.svg" class="cheek">
+        <img src="assets/page_4/cheek/cheek_3.svg" class="cheek">
+        <img src="assets/page_4/cheek/cheek_4.svg" class="cheek">
+      </div>
+
+      <!-- 머리 -->
+      <div class="p4-hair brown">
+        <img src="assets/page_4/hair/hair_bundouble_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_buntop_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_buntopbang_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_hippie_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_long_halfup_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_long_halfupperm_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_long_perm_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_long_straight_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_messy_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_mid_straight_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_ponytail_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_ponytail_low_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_short_halfup_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_short_layer_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_short_perm_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_short_straight_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_shortcut1_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_shortcut2_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_sidebraid_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_twintail_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_twintailbraid_brown.svg" class="hair">
+
+      </div>
+
+      <div class="p4-hair blonde">
+        <img src="assets/page_4/hair/hair_bundouble_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_buntop_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_buntopbang_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_hippie_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_long_halfup_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_long_halfupperm_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_long_perm_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_long_straight_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_messy_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_mid_straight_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_ponytail_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_ponytail_low_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_short_halfup_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_short_layer_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_short_perm_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_short_straight_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_shortcut1_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_shortcut2_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_sidebraid_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_twintail_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_twintailbraid_blonde.svg" class="hair">
+      </div>
+
+      <div class="p4-hair black">
+        <img src="assets/page_4/hair/hair_bundouble_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_buntop_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_buntopbang_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_hippie_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_long_halfup_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_long_halfupperm_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_long_perm_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_long_straight_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_messy_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_mid_straight_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_ponytail_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_ponytail_low_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_short_halfup_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_short_layer_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_short_perm_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_short_straight_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_shortcut1_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_shortcut2_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_sidebraid_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_twintail_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_twintailbraid_black.svg" class="hair">
+      </div>
+
+    </div>
+  </div>
+
+    <!-- ================= 좌우 버튼 ================= -->
+    <img src="assets/page_4/ui/button_next_left.svg" class="p4-arrow left">
+    <img src="assets/page_4/ui/button_next_right.svg" class="p4-arrow right">
+
+
+    <!-- ================= 카테고리 아이콘 ================= -->
+    <div class="p4-category-icons">
+
+      <div class="cat-icon eye active">
+        <img src="assets/page_4/ui/icon_eyes.svg">
+      </div>
+
+      <div class="cat-icon cheek">
+        <img src="assets/page_4/ui/icon_cheek.svg">
+      </div>
+
+      <div class="cat-icon hair">
+        <img src="assets/page_4/ui/icon_hair.svg">
+      </div>
+
+    </div>
+
+    <!-- ⭐ 색상칩 -->
+<div class="hair-color-wrap">
+
+  <!-- 기본 active 없어도 됨 (처음엔 발바닥 안보이게) -->
+  <button class="hair-chip" data-color="brown">
+    <img src="assets/page_4/ui/bt_brown.svg">
+    <img src="assets/page_4/ui/footprint_white.svg" class="p4-paw">
+  </button>
+
+  <button class="hair-chip" data-color="blonde">
+    <img src="assets/page_4/ui/bt_blonde.svg">
+    <img src="assets/page_4/ui/footprint_white.svg" class="p4-paw">
+  </button>
+
+  <button class="hair-chip" data-color="black">
+    <img src="assets/page_4/ui/bt_black.svg">
+    <img src="assets/page_4/ui/footprint_white.svg" class="p4-paw">
+  </button>
+
+</div>
+
+
+    <!-- ================= ⭐ 카테고리 박스 (에셋 버전) ================= -->
+    <div class="p4-category-box">
+
+      <div class="p4-category-scroll">
+
+      <!-- ========= 눈 ========= -->
+      <div class="p4-list eyes show">
+        <button class="item" data-type="eye" data-id="1">
+          <img src="assets/page_4/s_eye/s2_eye_basic.svg">
+        </button>
+
+        <button class="item" data-type="eye" data-id="2">
+          <img src="assets/page_4/s_eye/s1_eye_angry.svg">
+        </button>
+
+        <button class="item" data-type="eye" data-id="3">
+          <img src="assets/page_4/s_eye/s3_eye_beady.svg">
+        </button>
+
+        <button class="item" data-type="eye" data-id="4">
+          <img src="assets/page_4/s_eye/s4_eye_blank.svg">
+        </button>
+
+        <button class="item" data-type="eye" data-id="5">
+          <img src="assets/page_4/s_eye/s5_eye_cry.svg">
+        </button>
+
+        <button class="item" data-type="eye" data-id="6">
+          <img src="assets/page_4/s_eye/s6_eye_dead.svg">
+        </button>
+
+        <button class="item" data-type="eye" data-id="7">
+          <img src="assets/page_4/s_eye/s7_eye_dizzy.svg">
+        </button>
+
+        <button class="item" data-type="eye" data-id="8">
+          <img src="assets/page_4/s_eye/s8_eye_flat.svg">
+        </button>
+
+        <button class="item" data-type="eye" data-id="9">
+          <img src="assets/page_4/s_eye/s9_eye_happy.svg">
+        </button>
+
+        <button class="item" data-type="eye" data-id="10">
+          <img src="assets/page_4/s_eye/s10_eye_heart.svg">
+        </button>
+
+        <button class="item" data-type="eye" data-id="11">
+          <img src="assets/page_4/s_eye/s11_eye_puppy.svg">
+        </button>
+
+        <button class="item" data-type="eye" data-id="12">
+          <img src="assets/page_4/s_eye/s12_eye_sad.svg">
+        </button>
+
+        <button class="item" data-type="eye" data-id="13">
+          <img src="assets/page_4/s_eye/s13_eye_shy.svg">
+        </button>
+
+        <button class="item" data-type="eye" data-id="14">
+          <img src="assets/page_4/s_eye/s14_eye_sus.svg">
+        </button>
+
+        <button class="item" data-type="eye" data-id="15">
+          <img src="assets/page_4/s_eye/s15_eye_teary.svg">
+        </button>
+
+        <button class="item" data-type="eye" data-id="16">
+          <img src="assets/page_4/s_eye/s16_eye_tired.svg">
+        </button>
+
+        <button class="item" data-type="eye" data-id="17">
+          <img src="assets/page_4/s_eye/s17_eye_twinkle.svg">
+        </button>
+
+        <button class="item" data-type="eye" data-id="18">
+          <img src="assets/page_4/s_eye/s18_eye_wink.svg">
+        </button>
+      </div>
+
+
+      <!-- ========= 볼 ========= -->
+      <div class="p4-list cheek">
+        <button class="item" data-type="cheek" data-id="1">
+          <img src="assets/page_4/s_cheek/s1_cheek_1.svg">
+        </button>
+
+        <button class="item" data-type="cheek" data-id="2">
+          <img src="assets/page_4/s_cheek/s2_cheek_2.svg">
+        </button>
+
+        <button class="item" data-type="cheek" data-id="3">
+          <img src="assets/page_4/s_cheek/s3_cheek_3.svg">
+        </button>
+
+        <button class="item" data-type="cheek" data-id="4">
+          <img src="assets/page_4/s_cheek/s4_cheek_4.svg">
+        </button>
+      </div>
+
+
+      <!-- ========= 머리 ========= -->
+      <div class="p4-list hair">
+
+
+
+        <!-- 썸네일 -->
+        <div class="hair-grid">
+
+          <button class="item" data-type="hair" data-id="1">
+            <img src="assets/page_4/s_hair/s1_hair_bundouble_brown.svg">
+          </button>
+           <button class="item" data-type="hair" data-id="2">
+            <img src="assets/page_4/s_hair/s2_hair_buntop_brown.svg">
+          </button>
+           <button class="item" data-type="hair" data-id="3">
+            <img src="assets/page_4/s_hair/s3_hair_buntopbang_brown.svg">
+          </button>
+           <button class="item" data-type="hair" data-id="4">
+            <img src="assets/page_4/s_hair/s4_hair_hippie_brown.svg">
+          </button>
+           <button class="item" data-type="hair" data-id="5">
+            <img src="assets/page_4/s_hair/s5_hair_long_halfup_brown.svg">
+          </button>
+           <button class="item" data-type="hair" data-id="6">
+            <img src="assets/page_4/s_hair/s6_hair_long_halfupperm_brown.svg">
+          </button>
+           <button class="item" data-type="hair" data-id="7">
+            <img src="assets/page_4/s_hair/s7_hair_long_perm_brown.svg">
+          </button>
+           <button class="item" data-type="hair" data-id="8">
+            <img src="assets/page_4/s_hair/s8_hair_long_straight_brown.svg">
+          </button>
+           <button class="item" data-type="hair" data-id="9">
+            <img src="assets/page_4/s_hair/s9_hair_messy_brown.svg">
+          </button>
+           <button class="item" data-type="hair" data-id="10">
+            <img src="assets/page_4/s_hair/s10_hair_mid_straight_brown.svg">
+          </button>
+           <button class="item" data-type="hair" data-id="11">
+            <img src="assets/page_4/s_hair/s11_hair_ponytail_brown.svg">
+          </button>
+           <button class="item" data-type="hair" data-id="12">
+            <img src="assets/page_4/s_hair/s12_hair_ponytail_low_brown.svg">
+          </button>
+           <button class="item" data-type="hair" data-id="13">
+            <img src="assets/page_4/s_hair/s13_hair_short_halfup_brown.svg">
+          </button>
+           <button class="item" data-type="hair" data-id="14">
+            <img src="assets/page_4/s_hair/s14_hair_short_layer_brown.svg">
+          </button>
+           <button class="item" data-type="hair" data-id="15">
+            <img src="assets/page_4/s_hair/s15_hair_short_perm_brown.svg">
+          </button>
+           <button class="item" data-type="hair" data-id="16">
+            <img src="assets/page_4/s_hair/s16_hair_short_straight_brown.svg" >
+          </button>
+           <button class="item" data-type="hair" data-id="17">
+            <img src="assets/page_4/s_hair/s17_hair_shortcut1_brown.svg">
+          </button>
+           <button class="item" data-type="hair" data-id="18">
+            <img src="assets/page_4/s_hair/s18_hair_shortcut2_brown.svg">
+          </button>
+           <button class="item" data-type="hair" data-id="19">
+            <img src="assets/page_4/s_hair/s19_hair_sidebraid_brown.svg">
+          </button>
+           <button class="item" data-type="hair" data-id="20">
+            <img src="assets/page_4/s_hair/s20_hair_twintail_brown.svg">
+          </button>
+           <button class="item" data-type="hair" data-id="21">
+            <img src="assets/page_4/s_hair/s21_hair_twintailbraid_brown.svg">
+          </button>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+<!-- =====================
+  안내 오버레이 (튜토리얼)
+===================== -->
+<div class="guide-overlay" id="page4Guide">
+  <div class="guide-dim"></div>
+
+  <!-- 안내 이미지 -->
+  <img src="assets/page_4/ui/p4_guide.svg" class="guide-image" />
+
+  <!-- 닫기 버튼 -->
+  <button class="guide-close" onclick="closeGuide('page4Guide')">✕</button>
+</div>
+</div>
+
+<!-- ================= PAGE 5 ================= -->
+<div class="screen page5">
+
+  <!-- 체크배경 -->
+  <img src="assets/page_main/check.svg" class="bg-check">
+
+  <div class="p4-wrap">
+
+    <!-- ================= 제목 ================= -->
+    <div class="p5-title">
+      <div class="p5-name-pill">
+        <span id="p5UserName" class="p5-name-text">이름</span>
+      </div>
+      <span class="p5-title-text">의 오오티디</span>
+    </div>
+     <!-- =================되돌리기================= -->
+<button class="refresh-btn" onclick="resetCoordi()">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+       xmlns="http://www.w3.org/2000/svg">
+    <path d="M21 12a9 9 0 1 1-2.64-6.36"
+          stroke="#FDBEED" stroke-width="2" stroke-linecap="round"/>
+    <path d="M21 3v6h-6"
+          stroke="#FDBEED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+
+
+    <!-- ================= 캐릭터 ================= -->
+    <div class="character-wrap">
+      <div class="p4-character">
+
+        <!-- BASE -->
+        <img id="p5-body"
+             src="assets/page_4/character/body_skin_1.svg"
+             class="p4-layer">
+
+        <img id="p5-under"
+             src="assets/page_3/character/underwear_basic.svg"
+             class="p4-layer">
+
+             <!-- 눈 -->
+      <div class="p4-eyes">
+        <img class="eye base-eye show" src="assets/page_4/eye/eye_basic.svg" />
+        <img src="assets/page_4/eye/eye_basic.svg" class="eye">
+        <img src="assets/page_4/eye/eye_angry.svg" class="eye">
+        <img src="assets/page_4/eye/eye_beady.svg" class="eye">
+        <img src="assets/page_4/eye/eye_blank.svg" class="eye">
+        <img src="assets/page_4/eye/eye_cry.svg" class="eye">
+        <img src="assets/page_4/eye/eye_dead.svg" class="eye">
+        <img src="assets/page_4/eye/eye_dizzy.svg" class="eye">
+        <img src="assets/page_4/eye/eye_flat.svg" class="eye">
+        <img src="assets/page_4/eye/eye_happy.svg" class="eye">
+        <img src="assets/page_4/eye/eye_heart.svg" class="eye">
+        <img src="assets/page_4/eye/eye_puppy.svg" class="eye">
+        <img src="assets/page_4/eye/eye_sad.svg" class="eye">
+        <img src="assets/page_4/eye/eye_shy.svg" class="eye">
+        <img src="assets/page_4/eye/eye_sus.svg" class="eye">
+        <img src="assets/page_4/eye/eye_teary.svg" class="eye">
+        <img src="assets/page_4/eye/eye_tired.svg" class="eye">
+        <img src="assets/page_4/eye/eye_twinkle.svg" class="eye">
+        <img src="assets/page_4/eye/eye_wink.svg" class="eye">
+      </div>
+
+      <!-- 볼 -->
+      <div class="p4-cheeks">
+        <img src="assets/page_4/cheek/cheek_1.svg" class="cheek">
+        <img src="assets/page_4/cheek/cheek_2.svg" class="cheek">
+        <img src="assets/page_4/cheek/cheek_3.svg" class="cheek">
+        <img src="assets/page_4/cheek/cheek_4.svg" class="cheek">
+      </div>
+
+      <!-- 머리 -->
+      <div class="p4-hair brown">
+        <img src="assets/page_4/hair/hair_bundouble_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_buntop_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_buntopbang_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_hippie_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_long_halfup_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_long_halfupperm_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_long_perm_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_long_straight_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_messy_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_mid_straight_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_ponytail_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_ponytail_low_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_short_halfup_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_short_layer_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_short_perm_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_short_straight_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_shortcut1_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_shortcut2_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_sidebraid_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_twintail_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_twintailbraid_brown.svg" class="hair">
+
+      </div>
+
+      <div class="p4-hair blonde">
+        <img src="assets/page_4/hair/hair_bundouble_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_buntop_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_buntopbang_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_hippie_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_long_halfup_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_long_halfupperm_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_long_perm_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_long_straight_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_messy_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_mid_straight_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_ponytail_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_ponytail_low_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_short_halfup_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_short_layer_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_short_perm_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_short_straight_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_shortcut1_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_shortcut2_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_sidebraid_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_twintail_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_twintailbraid_blonde.svg" class="hair">
+      </div>
+
+      <div class="p4-hair black">
+        <img src="assets/page_4/hair/hair_bundouble_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_buntop_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_buntopbang_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_hippie_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_long_halfup_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_long_halfupperm_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_long_perm_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_long_straight_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_messy_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_mid_straight_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_ponytail_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_ponytail_low_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_short_halfup_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_short_layer_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_short_perm_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_short_straight_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_shortcut1_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_shortcut2_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_sidebraid_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_twintail_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_twintailbraid_black.svg" class="hair">
+      </div>
+             
+        <!-- ================= 의상 레이어 (⭐ div 구조 유지) ================= -->
+
+        <!-- TOP -->
+        <div class="p4-top">
+         <img src="assets/page_5/top/c1_top_none_tube.svg" class="top">
+         <img src="assets/page_5/top/c2_top_none_halter.svg" class="top">
+         <img src="assets/page_5/top/c3_top_none_t.svg" class="top">
+         <img src="assets/page_5/top/c4_top_short_t_white.svg" class="top">
+         <img src="assets/page_5/top/c5_top_short_t_black.svg" class="top">
+         <img src="assets/page_5/top/c6_top_none_offblouse_white.svg" class="top">
+         <img src="assets/page_5/top/c7_top_short_raglan_pink.svg" class="top">
+         <img src="assets/page_5/top/c8_top_short_raglan_skyblue.svg" class="top">
+         <img src="assets/page_5/top/c9_top_short_overt_white.svg" class="top">
+         <img src="assets/page_5/top/c10_top_short_overt_black.svg" class="top">
+         <img src="assets/page_5/top/c11_top_short_blouse_white.svg" class="top">
+         <img src="assets/page_5/top/c12_top_short_blouse_pink.svg" class="top">
+         <img src="assets/page_5/top/c13_top_short_blouse_skyblue.svg" class="top">
+         <img src="assets/page_5/top/c14_top_short_offt_white.svg" class="top">
+         <img src="assets/page_5/top/c15_top_short_offt_gray.svg" class="top">
+         <img src="assets/page_5/top/c16_top_short_overraglan_white.svg" class="top">
+         <img src="assets/page_5/top/c17_top_short_overshirt_white.svg" class="top">
+         <img src="assets/page_5/top/c18_top_short_overshirt_skyblue.svg" class="top">
+         <img src="assets/page_5/top/c19_top_long_t_white.svg" class="top">
+         <img src="assets/page_5/top/c20_top_long_t_black.svg" class="top">
+         <img src="assets/page_5/top/c21_top_long_overt_white.svg" class="top">
+         <img src="assets/page_5/top/c22_top_long_overt_black.svg" class="top">
+         <img src="assets/page_5/top/c23_top_long_blouse_white.svg" class="top">
+         <img src="assets/page_5/top/c24_top_long_blouse_pink.svg" class="top">
+         <img src="assets/page_5/top/c25_top_long_blouse_skyblue.svg" class="top">
+         <img src="assets/page_5/top/c26_top_long_raglan_gray.svg" class="top">
+         <img src="assets/page_5/top/c27_top_long_raglan_pink.svg" class="top">
+         <img src="assets/page_5/top/c28_top_long_shirt_white.svg" class="top">
+         <img src="assets/page_5/top/c29_top_long_shirt_skyblue.svg" class="top">
+         <img src="assets/page_5/top/c30_top_long_offknit_black.svg" class="top">
+         <img src="assets/page_5/top/c31_top_long_overshirt_white.svg" class="top">
+         <img src="assets/page_5/top/c32_top_long_overshirt_pink.svg" class="top">
+         <img src="assets/page_5/top/c33_top_long_overshirt_navy.svg" class="top">
+         <img src="assets/page_5/top/c34_top_long_cd_red.svg" class="top">
+         <img src="assets/page_5/top/c35_top_long_shirtcd_navy.svg" class="top">
+         <img src="assets/page_5/top/c36_top_long_cropknit_rainbow.svg" class="top">
+         <img src="assets/page_5/top/c37_top_long_cropknit_pink.svg" class="top">
+         <img src="assets/page_5/top/c38_top_long_cropknit_navy.svg" class="top">
+         <img src="assets/page_5/top/c39_top_long_mtm_gray.svg" class="top">
+         <img src="assets/page_5/top/c40_top_long_mtm_wine.svg" class="top">
+         <img src="assets/page_5/top/c41_top_long_hood_white.svg" class="top">
+         <img src="assets/page_5/top/c42_top_long_hood_gray.svg" class="top">
+         <img src="assets/page_5/top/c43_top_long_hood_navy.svg" class="top">
+         <img src="assets/page_5/top/c44_top_long_hood_black.svg" class="top">
+         <img src="assets/page_5/top/c45_top_long_offknit_white.svg" class="top">
+          
+        </div>
+
+        <!-- PANTS -->
+        <div class="p4-pants">
+         <img src="assets/page_5/pants/c1_pants_short_blue.svg" class="pants">
+         <img src="assets/page_5/pants/c2_pants_short_black.svg" class="pants">
+         <img src="assets/page_5/pants/c3_pants_midi_blue.svg" class="pants">
+         <img src="assets/page_5/pants/c4_pants_midi_black.svg" class="pants">
+         <img src="assets/page_5/pants/c5_pants_midi_camogreen.svg" class="pants">
+         <img src="assets/page_5/pants/c6_pants_midi_camopink.svg" class="pants">
+         <img src="assets/page_5/pants/c7_pants_long_blue_jean.svg" class="pants">
+         <img src="assets/page_5/pants/c8_pants_long_black_jean.svg" class="pants">
+         <img src="assets/page_5/pants/c9_pants_long_blue_raggedjean.svg" class="pants">
+         <img src="assets/page_5/pants/c10_pants_long_black_raggedjean.svg" class="pants">
+         <img src="assets/page_5/pants/c11_pants_long_pajama.svg" class="pants">
+         <img src="assets/page_5/pants/c12_pants_long_white_slacks.svg" class="pants">
+         <img src="assets/page_5/pants/c13_pants_long_brown_slacks.svg" class="pants">
+         <img src="assets/page_5/pants/c14_pants_long_black_slacks.svg" class="pants">
+         <img src="assets/page_5/pants/c15_pants_long_corduroy.svg" class="pants">
+         <img src="assets/page_5/pants/c16_pants_long_training.svg" class="pants">
+       
+        </div>
+
+        <!-- SKIRT -->
+        <div class="p4-skirt">
+          <img src="assets/page_5/skirt/c1_skirt_short_tenniswhite.svg" class="skirt">
+          <img src="assets/page_5/skirt/c2_skirt_short_tennisblack.svg" class="skirt">
+          <img src="assets/page_5/skirt/c3_skirt_short_denim.svg" class="skirt">
+          <img src="assets/page_5/skirt/c4_skirt_short_black.svg" class="skirt">
+          <img src="assets/page_5/skirt/c5_skirt_short_balloon.svg" class="skirt">
+          <img src="assets/page_5/skirt/c6_skirt_midi_checkpink.svg" class="skirt">
+          <img src="assets/page_5/skirt/c7_skirt_midi_checkblue.svg" class="skirt">
+          <img src="assets/page_5/skirt/c8_skirt_midi_brown.svg" class="skirt">
+          <img src="assets/page_5/skirt/c9_skirt_midi_purple.svg" class="skirt">
+          <img src="assets/page_5/skirt/c10_skirt_long_denim.svg"class="skirt">
+          <img src="assets/page_5/skirt/c11_skirt_long_corduroy.svg" class="skirt">
+          <img src="assets/page_5/skirt/c12_skirt_long_tennisgrey.svg" class="skirt">
+          <img src="assets/page_5/skirt/c13_skirt_long_tennisblack.svg" class="skirt">
+          <img src="assets/page_5/skirt/c14_skirt_long_frill.svg" class="skirt">
+          <img src="assets/page_5/skirt/c15_skirt_long_check.svg" class="skirt">
+        </div>
+
+        <!-- ONEPIECE -->
+        <div class="p4-onepiece">
+          <img src="assets/page_5/onepiece/c1_onepiece_short_white.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c2_onepiece_short_naivy.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c3_onepiece_short_blue_sleeveless.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c4_onepiece_short_naivy_sleeveless.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c5_onepiece_short_check_frill.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c6_onepiece_long_white.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c7_onepiece_long_naivy.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c8_onepiece_long_blue_sleeveless.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c9_onepiece_long_naivy_sleeveless.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c10_onepiece_short_black.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c11_onepiece_short_white_frill.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c12_onepiece_short_black_frill.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c13_onepiece_midi_white_shirt.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c14_onepiece_midi_blue_shirt.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c15_onepiece_long_blue_strapskirt.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c16_onepiece_long_black_strapskirt.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c17_onepiece_short_blue_strap.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c18_onepiece_short_khaki_strap.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c19_onepiece_long_white_strap.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c20_onepiece_long_brown_strap.svg" class="onepiece">
+        </div>
+
+        <!-- OUTER -->
+        <div class="p4-outer">
+          <img src="assets/page_5/outer/c1_outer_blue_shirt.svg" class="outer">
+          <img src="assets/page_5/outer/c2_outer_pink_shirt.svg" class="outer">
+          <img src="assets/page_5/outer/c3_outer_green_shirt.svg" class="outer">
+          <img src="assets/page_5/outer/c4_outer_transpar_raincoat.svg" class="outer">
+          <img src="assets/page_5/outer/c5_outer_yellow_raincoat.svg" class="outer">
+          <img src="assets/page_5/outer/c6_outer_blue_windbreak.svg" class="outer">
+          <img src="assets/page_5/outer/c7_outer_pink_windbreak.svg" class="outer">
+          <img src="assets/page_5/outer/c8_outer_black_windbreak.svg" class="outer">
+          <img src="assets/page_5/outer/c9_outer_white_jersey.svg" class="outer">
+          <img src="assets/page_5/outer/c10_outer_black_jersey.svg" class="outer">
+          <img src="assets/page_5/outer/c11_outer_blue_cd.svg" class="outer">
+          <img src="assets/page_5/outer/c12_outer_red_cd.svg" class="outer">
+          <img src="assets/page_5/outer/c13_outer_gray_hoodzip.svg" class="outer">
+          <img src="assets/page_5/outer/c14_outer_brown_hoodzip.svgc13_.svg" class="outer">
+          <img src="assets/page_5/outer/c15_outer_black_hoodzip.svg" class="outer">
+          <img src="assets/page_5/outer/c16_outer_white_shortpadding.svg" class="outer">
+          <img src="assets/page_5/outer/c17_outer_black_shortpadding.svg" class="outer">
+          <img src="assets/page_5/outer/c18_outer_brown_leather.svg" class="outer">
+          <img src="assets/page_5/outer/c19_outer_black_leather.svg" class="outer">
+          <img src="assets/page_5/outer/c20_outer_black_mustang.svg" class="outer">
+          <img src="assets/page_5/outer/c21_outer_white_cape.svg" class="outer">
+          <img src="assets/page_5/outer/c22_outer_gray_cape.svg" class="outer">
+          <img src="assets/page_5/outer/c23_outer_shortcoat.svg" class="outer">
+          <img src="assets/page_5/outer/c24_outer_naivy_shortdufflecoat.svg" class="outer">
+          <img src="assets/page_5/outer/c25_outer_naivy_longdufflecoat.svg" class="outer">
+          <img src="assets/page_5/outer/c26_outer_brown_longdufflecoat.svg" class="outer">
+          <img src="assets/page_5/outer/c27_outer_trench.svg" class="outer">
+          <img src="assets/page_5/outer/c28_outer_gray_longcoat.svg" class="outer">
+          <img src="assets/page_5/outer/c29_outer_black_longcoat.svg" class="outer">
+          <img src="assets/page_5/outer/c30_outer_longpadding.svg" class="outer">
+        </div>
+
+        <!-- SOCKS -->
+        <div class="p4-socks"> 
+          <img src="assets/page_5/socks/c1_socks_short_white.svg" class="socks">
+          <img src="assets/page_5/socks/c2_socks_short_pink.svg" class="socks">
+          <img src="assets/page_5/socks/c3_socks_short_blue.svg" class="socks">
+          <img src="assets/page_5/socks/c4_socks_black.svg" class="socks">
+          <img src="assets/page_5/socks/c5_socks_short_whitelace.svg" class="socks">
+          <img src="assets/page_5/socks/c6_socks_half_white.svg" class="socks">
+          <img src="assets/page_5/socks/c7_socks_half_black.svg" class="socks">
+          <img src="assets/page_5/socks/c8_socks_half_whitelace.svg" class="socks">
+          <img src="assets/page_5/socks/c9_socks_half_blackdot.svg" class="socks">
+          <img src="assets/page_5/socks/c10_socks_long_white.svg" class="socks">
+          <img src="assets/page_5/socks/c11_socks_long_dot.svg" class="socks">
+          <img src="assets/page_5/socks/c12_socks_long_heart.svg" class="socks">
+          <img src="assets/page_5/socks/c13_socks_long_coffee.svg" class="socks">
+          <img src="assets/page_5/socks/c14_socks_long_sheerblack.svg" class="socks">
+        </div>
+
+        <!-- SHOES -->
+        <div class="p4-shoes">
+          <img src="assets/page_5/shoes/c1_shoes_slipper.svg" class="shoes">
+          <img src="assets/page_5/shoes/c2_shoes_crocs_white.svg" class="shoes">
+          <img src="assets/page_5/shoes/c3_shoes_crocs_black.svg" class="shoes">
+          <img src="assets/page_5/shoes/c4_shoes_converse_wine.svg" class="shoes">
+          <img src="assets/page_5/shoes/c5_shoes_converse_navy.svg" class="shoes">
+          <img src="assets/page_5/shoes/c6_shoes_slipper_character.svg" class="shoes">
+          <img src="assets/page_5/shoes/c7_shoes_maryjane_red.svg" class="shoes">
+          <img src="assets/page_5/shoes/c8_shoes_maryjane_black.svg" class="shoes">
+          <img src="assets/page_5/shoes/c9_shoes_sneakers.svg" class="shoes">
+          <img src="assets/page_5/shoes/c10_shoes_conversehigh_wine.svg" class="shoes">
+          <img src="assets/page_5/shoes/c11_shoes_conversehigh_navy.svg" class="shoes">
+          <img src="assets/page_5/shoes/c12_shoes_slipper_indoor.svg" class="shoes">
+          <img src="assets/page_5/shoes/c13_shoes_sandal_brown.svg" class="shoes">
+          <img src="assets/page_5/shoes/c14_shoes_sandal_black.svg" class="shoes">
+          <img src="assets/page_5/shoes/c15_shoes_rainboots_long.svg" class="shoes">
+          <img src="assets/page_5/shoes/c16_shoes_rainboots_mid.svg" class="shoes">
+          <img src="assets/page_5/shoes/c17_shoes_boots_long_black.svg" class="shoes">
+          <img src="assets/page_5/shoes/c18_shoes_boots_mid_brown.svg" class="shoes">
+        </div>
+
+      </div>
+    </div>
+<!-- 강아지 아이콘 -->
+<div class="dog-tip">
+  <img src="assets/page_2/2_dog4.svg" class="dog-icon" />
+  <!-- 말풍선 -->
+  <div class="dog-bubble" id="dogBubble">
+    Tip!오늘의 코디 기록하는중...
+  </div>
+</div>
+    <!-- ================= 좌우 버튼 ================= -->
+    <img src="assets/page_4/ui/button_next_left.svg" class="p4-arrow left">
+    <img src="assets/page_4/ui/button_next_right.svg" class="p4-arrow right">
+
+    <!-- ================= 카테고리 아이콘 ================= -->
+    <div class="p4-category-icons">
+
+      <div class="cat-icon top active">
+        <img src="assets/page_5/ui/icon_top.svg">
+      </div>
+
+      <div class="cat-icon pants">
+        <img src="assets/page_5/ui/icon_pants.svg">
+      </div>
+
+      <div class="cat-icon skirt">
+        <img src="assets/page_5/ui/icon_skirt.svg">
+      </div>
+
+      <div class="cat-icon onepiece">
+        <img src="assets/page_5/ui/icon_onepiece.svg">
+      </div>
+
+      <div class="cat-icon outer">
+        <img src="assets/page_5/ui/icon_outer.svg">
+      </div>
+
+      <div class="cat-icon socks">
+        <img src="assets/page_5/ui/icon_socks.svg">
+      </div>
+
+      <div class="cat-icon shoes">
+        <img src="assets/page_5/ui/icon_shoes.svg">
+      </div>
+
+    </div>
+
+    <!-- ================= 카테고리 박스 ================= -->
+    <div class="p4-category-box">
+      <div class="p4-category-scroll">
+
+        <div class="p4-list top show">
+          <button class="item" data-type="top" data-id="1">
+            <img src="assets/page_5/s_top/s1_top_none_tube.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="2">
+            <img src="assets/page_5/s_top/s2_top_none_halter.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="3">
+            <img src="assets/page_5/s_top/s3_top_none_t.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="4">
+            <img src="assets/page_5/s_top/s4_top_short_t_white.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="5">
+            <img src="assets/page_5/s_top/s5_top_short_t_black.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="6">
+            <img src="assets/page_5/s_top/s6_top_none_offblouse_white.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="7">
+            <img src="assets/page_5/s_top/s7_top_short_raglan_pink.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="8">
+            <img src="assets/page_5/s_top/s8_top_short_raglan_skyblue.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="9">
+            <img src="assets/page_5/s_top/s9_top_short_overt_white.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="10">
+            <img src="assets/page_5/s_top/s10_top_short_overt_black.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="11">
+            <img src="assets/page_5/s_top/s11_top_short_blouse_white.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="12">
+            <img src="assets/page_5/s_top/s12_top_short_blouse_pink.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="13">
+            <img src="assets/page_5/s_top/s13_top_short_blouse_skyblue.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="14">
+            <img src="assets/page_5/s_top/s14_top_short_offt_white.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="15">
+            <img src="assets/page_5/s_top/s15_top_short_offt_gray.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="16">
+            <img src="assets/page_5/s_top/s16_top_short_overraglan_white.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="17">
+            <img src="assets/page_5/s_top/s17_top_short_overshirt_white.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="18">
+            <img src="assets/page_5/s_top/s18_top_short_overshirt_skyblue.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="19">
+            <img src="assets/page_5/s_top/s19_top_long_t_white.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="20">
+            <img src="assets/page_5/s_top/s20_top_long_t_black.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="21">
+            <img src="assets/page_5/s_top/s21_top_long_overt_white.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="22">
+            <img src="assets/page_5/s_top/s22_top_long_overt_black.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="23">
+            <img src="assets/page_5/s_top/s23_top_long_blouse_white.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="24">
+            <img src="assets/page_5/s_top/s24_top_long_blouse_pink.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="25">
+            <img src="assets/page_5/s_top/s25_top_long_blouse_skyblue.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="26">
+            <img src="assets/page_5/s_top/s26_top_long_raglan_gray.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="27">
+            <img src="assets/page_5/s_top/s27_top_long_raglan_pink.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="28">
+            <img src="assets/page_5/s_top/s28_top_long_shirt_white.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="29">
+            <img src="assets/page_5/s_top/s29_top_long_shirt_skyblue.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="30">
+            <img src="assets/page_5/s_top/s30_top_long_offknit_black.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="31">
+            <img src="assets/page_5/s_top/s31_top_long_overshirt_white.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="32">
+            <img src="assets/page_5/s_top/s32_top_long_overshirt_pink.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="33">
+            <img src="assets/page_5/s_top/s33_top_long_overshirt_navy.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="34">
+            <img src="assets/page_5/s_top/s34_top_long_cd_red.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="35">
+            <img src="assets/page_5/s_top/s35_top_long_shirtcd_navy.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="36">
+            <img src="assets/page_5/s_top/s36_top_long_cropknit_rainbow.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="37">
+            <img src="assets/page_5/s_top/s37_top_long_cropknit_pink.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="38">
+            <img src="assets/page_5/s_top/s38_top_long_cropknit_navy.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="39">
+            <img src="assets/page_5/s_top/s39_top_long_mtm_gray.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="40">
+            <img src="assets/page_5/s_top/s40_top_long_mtm_wine.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="41">
+            <img src="assets/page_5/s_top/s41_top_long_hood_white.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="42">
+            <img src="assets/page_5/s_top/s42_top_long_hood_gray.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="43">
+            <img src="assets/page_5/s_top/s43_top_long_hood_navy.svg">
+          </button>
+
+          <button class="item" data-type="top" data-id="44">
+            <img src="assets/page_5/s_top/s44_top_long_hood_black.svg">
+          </button>
+
+           <button class="item" data-type="top" data-id="45">
+            <img src="assets/page_5/s_top/s45_top_long_offknit_white.svg">
+          </button>
+        </div>
+
+        <div class="p4-list pants">
+          <button class="item" data-type="pants" data-id="1">
+            <img src="assets/page_5/s_pants/s1_pants_short_blue.svg">
+          </button>
+
+          <button class="item" data-type="pants" data-id="2">
+            <img src="assets/page_5/s_pants/s2_pants_short_black.svg">
+          </button>
+
+          <button class="item" data-type="pants" data-id="3">
+            <img src="assets/page_5/s_pants/s3_pants_midi_blue.svg">
+          </button>
+
+          <button class="item" data-type="pants" data-id="4">
+            <img src="assets/page_5/s_pants/s4_pants_midi_black.svg">
+          </button>
+
+          <button class="item" data-type="pants" data-id="5">
+            <img src="assets/page_5/s_pants/s5_pants_midi_camogreen.svg">
+          </button>
+
+          <button class="item" data-type="pants" data-id="6">
+            <img src="assets/page_5/s_pants/s6_pants_midi_camopink.svg">
+          </button>
+          
+          <button class="item" data-type="pants" data-id="7">
+            <img src="assets/page_5/s_pants/s7_pants_long_blue_jean.svg">
+          </button>
+          
+          <button class="item" data-type="pants" data-id="8">
+            <img src="assets/page_5/s_pants/s8_pants_long_black_jean.svg">
+          </button>
+
+          <button class="item" data-type="pants" data-id="9">
+            <img src="assets/page_5/s_pants/s9_pants_long_blue_raggedjean.svg">
+          </button>
+
+          <button class="item" data-type="pants" data-id="10">
+            <img src="assets/page_5/s_pants/s10_pants_long_black_raggedjean.svg">
+          </button>
+
+          <button class="item" data-type="pants" data-id="11">
+            <img src="assets/page_5/s_pants/s11_pants_long_pajama.svg">
+          </button>
+
+          <button class="item" data-type="pants" data-id="12">
+            <img src="assets/page_5/s_pants/s12_pants_long_white_slacks.svg">
+          </button>
+
+          <button class="item" data-type="pants" data-id="13">
+            <img src="assets/page_5/s_pants/s13_pants_long_brown_slacks.svg">
+          </button>
+
+          <button class="item" data-type="pants" data-id="14">
+            <img src="assets/page_5/s_pants/s14_pants_long_black_slacks.svg">
+          </button>
+
+          <button class="item" data-type="pants" data-id="15">
+            <img src="assets/page_5/s_pants/s15_pants_long_corduroy.svg">
+          </button>
+
+          <button class="item" data-type="pants" data-id="16">
+            <img src="assets/page_5/s_pants/s16_pants_long_training.svg">
+          </button>
+        
+        </div>
+
+        <div class="p4-list skirt">
+          <button class="item" data-type="skirt" data-id="1">
+            <img src="assets/page_5/s_skirt/s1_skirt_short_tenniswhite.svg">
+          </button>
+
+          <button class="item" data-type="skirt" data-id="2">
+            <img src="assets/page_5/s_skirt/s2_skirt_short_tennisblack.svg">
+          </button>
+
+          <button class="item" data-type="skirt" data-id="3">
+            <img src="assets/page_5/s_skirt/s3_skirt_short_denim.svg">
+          </button>
+
+          <button class="item" data-type="skirt" data-id="4">
+            <img src="assets/page_5/s_skirt/s4_skirt_short_black.svg">
+          </button>
+
+          <button class="item" data-type="skirt" data-id="5">
+            <img src="assets/page_5/s_skirt/s5_skirt_short_balloon.svg">
+          </button>
+
+          <button class="item" data-type="skirt" data-id="6">
+            <img src="assets/page_5/s_skirt/s6_skirt_midi_checkpink.svg">
+          </button>
+
+          <button class="item" data-type="skirt" data-id="7">
+            <img src="assets/page_5/s_skirt/s7_skirt_midi_checkblue.svg">
+          </button>
+
+          <button class="item" data-type="skirt" data-id="8">
+            <img src="assets/page_5/s_skirt/s8_skirt_midi_brown.svg">
+          </button>
+
+          <button class="item" data-type="skirt" data-id="9">
+            <img src="assets/page_5/s_skirt/s9_skirt_midi_purple.svg">
+          </button>
+
+          <button class="item" data-type="skirt" data-id="10">
+            <img src="assets/page_5/s_skirt/s10_skirt_long_denim.svg">
+          </button>
+
+          <button class="item" data-type="skirt" data-id="11">
+            <img src="assets/page_5/s_skirt/s11_skirt_long_corduroy.svg">
+          </button>
+
+          <button class="item" data-type="skirt" data-id="12">
+            <img src="assets/page_5/s_skirt/s12_skirt_long_tennisgrey.svg">
+          </button>
+
+          <button class="item" data-type="skirt" data-id="13">
+            <img src="assets/page_5/s_skirt/s13_skirt_long_tennisblack.svg">
+          </button>
+
+          <button class="item" data-type="skirt" data-id="14">
+            <img src="assets/page_5/s_skirt/s14_skirt_long_frill.svg">
+          </button>
+
+          <button class="item" data-type="skirt" data-id="15">
+            <img src="assets/page_5/s_skirt/s15_skirt_long_check.svg">
+          </button>
+        </div>
+
+        <div class="p4-list onepiece">
+
+          <button class="item" data-type="onepiece" data-id="1">
+            <img src="assets/page_5/s_onepiece/s1_onepiece_short_white.svg">
+          </button>
+
+          <button class="item" data-type="onepiece" data-id="2">
+            <img src="assets/page_5/s_onepiece/s2_onepiece_short_naivy.svg">
+          </button>
+
+          <button class="item" data-type="onepiece" data-id="3">
+            <img src="assets/page_5/s_onepiece/s3_onepiece_short_blue_sleeveless.svg">
+          </button>
+
+          <button class="item" data-type="onepiece" data-id="4">
+            <img src="assets/page_5/s_onepiece/s4_onepiece_short_naivy_sleeveless.svg">
+          </button>
+
+          <button class="item" data-type="onepiece" data-id="5">
+            <img src="assets/page_5/s_onepiece/s5_onepiece_short_check_frill.svg">
+          </button>
+
+          <button class="item" data-type="onepiece" data-id="6">
+            <img src="assets/page_5/s_onepiece/s6_onepiece_long_white.svg">
+          </button>
+
+          <button class="item" data-type="onepiece" data-id="7">
+            <img src="assets/page_5/s_onepiece/s7_onepiece_long_naivy.svg">
+          </button>
+
+          <button class="item" data-type="onepiece" data-id="8">
+            <img src="assets/page_5/s_onepiece/s8_onepiece_long_blue_sleeveless.svg">
+          </button>
+
+          <button class="item" data-type="onepiece" data-id="9">
+            <img src="assets/page_5/s_onepiece/s9_onepiece_long_naivy_sleeveless.svg">
+          </button>
+
+          <button class="item" data-type="onepiece" data-id="10">
+            <img src="assets/page_5/s_onepiece/s10_onepiece_short_black.svg">
+          </button>
+
+          <button class="item" data-type="onepiece" data-id="11">
+            <img src="assets/page_5/s_onepiece/s11_onepiece_short_white_frill.svg">
+          </button>
+
+          <button class="item" data-type="onepiece" data-id="12">
+            <img src="assets/page_5/s_onepiece/s12_onepiece_short_black_frill.svg">
+          </button>
+
+          <button class="item" data-type="onepiece" data-id="13">
+            <img src="assets/page_5/s_onepiece/s13_onepiece_midi_white_shirt..svg">
+          </button>
+
+          <button class="item" data-type="onepiece" data-id="14">
+            <img src="assets/page_5/s_onepiece/s14_onepiece_midi_blue_shirt.svg">
+          </button>
+
+          <button class="item" data-type="onepiece" data-id="15">
+            <img src="assets/page_5/s_onepiece/s15_onepiece_long_blue_strapskirt.svg">
+          </button>
+
+          <button class="item" data-type="onepiece" data-id="16">
+            <img src="assets/page_5/s_onepiece/s16_onepiece_long_black_strapskirt..svg">
+          </button>
+
+          <button class="item" data-type="onepiece" data-id="17">
+            <img src="assets/page_5/s_onepiece/s17_onepiece_short_blue_strap.svg">
+          </button>
+
+          <button class="item" data-type="onepiece" data-id="18">
+            <img src="assets/page_5/s_onepiece/s18_onepiece_short_khaki_strap.svg">
+          </button>
+
+          <button class="item" data-type="onepiece" data-id="19">
+            <img src="assets/page_5/s_onepiece/s19_onepiece_long_white_strap.svg">
+          </button>
+
+          <button class="item" data-type="onepiece" data-id="20">
+            <img src="assets/page_5/s_onepiece/s20_onepiece_long_brown_strap.svg">
+          </button>
+          
+        </div>
+
+        <div class="p4-list outer">
+         <button class="item" data-type="outer" data-id="1">
+            <img src="assets/page_5/s_outer/s1_outer_blue_shirt.svg">
+          </button>
+
+             <button class="item" data-type="outer" data-id="2">
+            <img src="assets/page_5/s_outer/s2_outer_pink_shirt.svg">
+          </button>
+
+             <button class="item" data-type="outer" data-id="3">
+            <img src="assets/page_5/s_outer/s3_outer_green_shirt.svg">
+          </button>
+
+             <button class="item" data-type="outer" data-id="4">
+            <img src="assets/page_5/s_outer/s4_outer_transpar_raincoat.svg">
+          </button>
+
+             <button class="item" data-type="outer" data-id="5">
+            <img src="assets/page_5/s_outer/s5_outer_yellow_raincoat.svg">
+          </button>
+
+             <button class="item" data-type="outer" data-id="6">
+            <img src="assets/page_5/s_outer/s6_outer_blue_windbreak.svg">
+          </button>
+
+             <button class="item" data-type="outer" data-id="7">
+            <img src="assets/page_5/s_outer/s7_outer_pink_windbreak.svg">
+          </button>
+
+             <button class="item" data-type="outer" data-id="8">
+            <img src="assets/page_5/s_outer/s8_outer_black_windbreak.svg">
+          </button>
+
+             <button class="item" data-type="outer" data-id="9">
+            <img src="assets/page_5/s_outer/s9_outer_white_jersey.svg">
+          </button>
+
+             <button class="item" data-type="outer" data-id="10">
+            <img src="assets/page_5/s_outer/s10_outer_black_jersey.svg">
+          </button>
+
+             <button class="item" data-type="outer" data-id="11">
+            <img src="assets/page_5/s_outer/s11_outer_blue_cd.svg">
+          </button>
+
+             <button class="item" data-type="outer" data-id="12">
+            <img src="assets/page_5/s_outer/s12_outer_red_cd.svg">
+          </button>
+
+             <button class="item" data-type="outer" data-id="13">
+            <img src="assets/page_5/s_outer/s13_outer_gray_hoodzip.svg">
+          </button>
+
+             <button class="item" data-type="outer" data-id="14">
+            <img src="assets/page_5/s_outer/s14_outer_brown_hoodzip.svg">
+          </button>
+
+             <button class="item" data-type="outer" data-id="15">
+            <img src="assets/page_5/s_outer/s15_outer_black_hoodzip.svg">
+          </button>
+
+             <button class="item" data-type="outer" data-id="16">
+            <img src="assets/page_5/s_outer/s16_outer_white_shortpadding.svg">
+          </button>
+
+             <button class="item" data-type="outer" data-id="17">
+            <img src="assets/page_5/s_outer/s17_outer_black_shortpadding.svg">
+          </button>
+
+             <button class="item" data-type="outer" data-id="18">
+            <img src="assets/page_5/s_outer/s18_outer_brown_leather.svg">
+          </button>
+
+             <button class="item" data-type="outer" data-id="19">
+            <img src="assets/page_5/s_outer/s19_outer_black_leather.svg">
+          </button>
+
+             <button class="item" data-type="outer" data-id="20">
+            <img src="assets/page_5/s_outer/s20_outer_black_mustang.svg">
+          </button>
+
+             <button class="item" data-type="outer" data-id="21">
+            <img src="assets/page_5/s_outer/s21_outer_white_cape.svg">
+          </button>
+
+             <button class="item" data-type="outer" data-id="22">
+            <img src="assets/page_5/s_outer/s22_outer_gray_cape.svg">
+          </button>
+
+             <button class="item" data-type="outer" data-id="23">
+            <img src="assets/page_5/s_outer/s23_outer_shortcoat.svg">
+          </button>
+
+             <button class="item" data-type="outer" data-id="24">
+            <img src="assets/page_5/s_outer/s24_outer_naivy_shortdufflecoat.svg">
+          </button>
+
+             <button class="item" data-type="outer" data-id="25">
+            <img src="assets/page_5/s_outer/s25_outer_naivy_longdufflecoat.svg">
+          </button>
+
+             <button class="item" data-type="outer" data-id="26">
+            <img src="assets/page_5/s_outer/s26_outer_brown_longdufflecoat.svg">
+          </button>
+
+             <button class="item" data-type="outer" data-id="27">
+            <img src="assets/page_5/s_outer/s27_outer_trench.svg">
+           </button>
+
+             <button class="item" data-type="outer" data-id="28">
+            <img src="assets/page_5/s_outer/s28_outer_gray_longcoat.svg">
+          </button>
+
+             <button class="item" data-type="outer" data-id="29">
+            <img src="assets/page_5/s_outer/s29_outer_black_longcoat.svg">
+          </button>
+
+             <button class="item" data-type="outer" data-id="30">
+            <img src="assets/page_5/s_outer/s30_outer_longpadding.svg">
+             </button>
+
+        </div>
+
+        <div class="p4-list socks">
+          <button class="item" data-type="socks" data-id="1">
+            <img src="assets/page_5/s_socks/s1_socks_short_white.svg">
+          </button>
+          
+          <button class="item" data-type="socks" data-id="2">
+            <img src="assets/page_5/s_socks/s2_socks_short_pink.svg">
+          </button>
+
+          <button class="item" data-type="socks" data-id="3">
+            <img src="assets/page_5/s_socks/s3_socks_short_blue.svg">
+          </button>
+          
+          <button class="item" data-type="socks" data-id="4">
+            <img src="assets/page_5/s_socks/s4_socks_black.svg">
+          </button>
+
+          <button class="item" data-type="socks" data-id="5">
+            <img src="assets/page_5/s_socks/s5_socks_short_whitelace.svg">
+          </button>
+          
+          <button class="item" data-type="socks" data-id="6">
+            <img src="assets/page_5/s_socks/s6_socks_half_white.svg">
+          </button>
+
+          <button class="item" data-type="socks" data-id="7">
+            <img src="assets/page_5/s_socks/s7_socks_half_black.svg">
+          </button>
+          
+          <button class="item" data-type="socks" data-id="8">
+            <img src="assets/page_5/s_socks/s8_socks_half_whitelace.svg">
+          </button>
+          
+          <button class="item" data-type="socks" data-id="9">
+            <img src="assets/page_5/s_socks/s9_socks_half_blackdot.svg">
+          </button>
+
+          <button class="item" data-type="socks" data-id="10">
+            <img src="assets/page_5/s_socks/s10_socks_long_white.svg">
+          </button>
+          
+          <button class="item" data-type="socks" data-id="11">
+            <img src="assets/page_5/s_socks/s11_socks_long_dot.svg">
+          </button>
+
+          <button class="item" data-type="socks" data-id="12">
+            <img src="assets/page_5/s_socks/s12_socks_long_heart.svg">
+          </button>
+          
+          <button class="item" data-type="socks" data-id="13">
+            <img src="assets/page_5/s_socks/s13_socks_long_coffee.svg">
+          </button>
+          
+          <button class="item" data-type="socks" data-id="14">
+            <img src="assets/page_5/s_socks/s14_socks_long_sheerblack.svg">
+          </button>
+        </div>
+
+        <div class="p4-list shoes">
+
+          <button class="item" data-type="shoes" data-id="1">
+            <img src="assets/page_5/s_shoes/s1_shoes_slipper.svg">
+          </button>
+
+          <button class="item" data-type="shoes" data-id="2">
+            <img src="assets/page_5/s_shoes/s2_shoes_crocs_white.svg">
+          </button>
+
+          <button class="item" data-type="shoes" data-id="3">
+            <img src="assets/page_5/s_shoes/s3_shoes_crocs_black.svg">
+          </button>
+
+          <button class="item" data-type="shoes" data-id="4">
+            <img src="assets/page_5/s_shoes/s4_shoes_converse_wine.svg">
+          </button>
+
+          <button class="item" data-type="shoes" data-id="5">
+            <img src="assets/page_5/s_shoes/s5_shoes_converse_navy.svg">
+          </button>
+
+          <button class="item" data-type="shoes" data-id="6">
+            <img src="assets/page_5/s_shoes/s6_shoes_slipper_character.svg">
+          </button>
+
+          <button class="item" data-type="shoes" data-id="7">
+            <img src="assets/page_5/s_shoes/s7_shoes_maryjane_red.svg">
+          </button>
+
+          <button class="item" data-type="shoes" data-id="8">
+            <img src="assets/page_5/s_shoes/s8_shoes_maryjane_black.svg">
+          </button>
+          
+          <button class="item" data-type="shoes" data-id="9">
+            <img src="assets/page_5/s_shoes/s9_shoes_sneakers.svg">
+          </button>
+
+          <button class="item" data-type="shoes" data-id="10">
+            <img src="assets/page_5/s_shoes/s10_shoes_conversehigh_wine.svg">
+          </button>
+
+          <button class="item" data-type="shoes" data-id="11">
+            <img src="assets/page_5/s_shoes/s11_shoes_conversehigh_navy.svg">
+          </button>
+
+          <button class="item" data-type="shoes" data-id="12">
+            <img src="assets/page_5/s_shoes/s12_shoes_slipper_indoor.svg">
+          </button>
+
+          <button class="item" data-type="shoes" data-id="13">
+            <img src="assets/page_5/s_shoes/s13_shoes_sandal_brown.svg">
+          </button>
+
+          <button class="item" data-type="shoes" data-id="14">
+            <img src="assets/page_5/s_shoes/s14_shoes_sandal_black.svg">
+          </button>
+
+          <button class="item" data-type="shoes" data-id="15">
+            <img src="assets/page_5/s_shoes/s15_shoes_rainboots_long.svg">
+          </button>
+
+          <button class="item" data-type="shoes" data-id="16">
+            <img src="assets/page_5/s_shoes/s16_shoes_rainboots_mid.svg">
+          </button>
+          
+          <button class="item" data-type="shoes" data-id="17">
+            <img src="assets/page_5/s_shoes/s17_shoes_boots_long_black.svg">
+          </button>
+          
+          <button class="item" data-type="shoes" data-id="18">
+            <img src="assets/page_5/s_shoes/s18_shoes_boots_mid_brown.svg">
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- ================= PAGE 6 ================= -->
+<div class="screen page6">
+
+  <!-- 체크배경 -->
+  <img src="assets/page_main/check.svg" class="bg-check">
+
+  <div class="p4-wrap">
+
+    <!-- ================= 제목 ================= -->
+    <div class="p5-title">
+      <div class="p5-name-pill">
+        <span id="p5UserName" class="p5-name-text">이름</span>
+      </div>
+      <span class="p5-title-text">의 오오티디</span>
+    </div>
+     <!-- =================되돌리기================= -->
+<button class="refresh-btn" onclick="resetAcc()">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+       xmlns="http://www.w3.org/2000/svg">
+    <path d="M21 12a9 9 0 1 1-2.64-6.36"
+          stroke="#FDBEED" stroke-width="2" stroke-linecap="round"/>
+    <path d="M21 3v6h-6"
+          stroke="#FDBEED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+
+
+    <!-- ================= 캐릭터 ================= -->
+    <div class="character-wrap">
+      <div class="p4-character">
+
+        <!-- BASE -->
+        <img id="p5-body"
+             src="assets/page_4/character/body_skin_1.svg"
+             class="p4-layer">
+
+        <img id="p5-under"
+             src="assets/page_3/character/underwear_basic.svg"
+             class="p4-layer">
+
+             <!-- 눈 -->
+      <div class="p4-eyes">
+        <img class="eye base-eye show" src="assets/page_4/eye/eye_basic.svg" />
+        <img src="assets/page_4/eye/eye_basic.svg" class="eye">
+        <img src="assets/page_4/eye/eye_angry.svg" class="eye">
+        <img src="assets/page_4/eye/eye_beady.svg" class="eye">
+        <img src="assets/page_4/eye/eye_blank.svg" class="eye">
+        <img src="assets/page_4/eye/eye_cry.svg" class="eye">
+        <img src="assets/page_4/eye/eye_dead.svg" class="eye">
+        <img src="assets/page_4/eye/eye_dizzy.svg" class="eye">
+        <img src="assets/page_4/eye/eye_flat.svg" class="eye">
+        <img src="assets/page_4/eye/eye_happy.svg" class="eye">
+        <img src="assets/page_4/eye/eye_heart.svg" class="eye">
+        <img src="assets/page_4/eye/eye_puppy.svg" class="eye">
+        <img src="assets/page_4/eye/eye_sad.svg" class="eye">
+        <img src="assets/page_4/eye/eye_shy.svg" class="eye">
+        <img src="assets/page_4/eye/eye_sus.svg" class="eye">
+        <img src="assets/page_4/eye/eye_teary.svg" class="eye">
+        <img src="assets/page_4/eye/eye_tired.svg" class="eye">
+        <img src="assets/page_4/eye/eye_twinkle.svg" class="eye">
+        <img src="assets/page_4/eye/eye_wink.svg" class="eye">
+      </div>
+
+      <!-- 볼 -->
+      <div class="p4-cheeks">
+        <img src="assets/page_4/cheek/cheek_1.svg" class="cheek">
+        <img src="assets/page_4/cheek/cheek_2.svg" class="cheek">
+        <img src="assets/page_4/cheek/cheek_3.svg" class="cheek">
+        <img src="assets/page_4/cheek/cheek_4.svg" class="cheek">
+      </div>
+
+      <!-- 머리 -->
+      <div class="p4-hair brown">
+        <img src="assets/page_4/hair/hair_bundouble_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_buntop_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_buntopbang_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_hippie_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_long_halfup_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_long_halfupperm_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_long_perm_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_long_straight_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_messy_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_mid_straight_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_ponytail_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_ponytail_low_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_short_halfup_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_short_layer_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_short_perm_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_short_straight_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_shortcut1_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_shortcut2_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_sidebraid_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_twintail_brown.svg" class="hair">
+        <img src="assets/page_4/hair/hair_twintailbraid_brown.svg" class="hair">
+
+      </div>
+
+      <div class="p4-hair blonde">
+        <img src="assets/page_4/hair/hair_bundouble_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_buntop_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_buntopbang_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_hippie_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_long_halfup_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_long_halfupperm_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_long_perm_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_long_straight_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_messy_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_mid_straight_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_ponytail_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_ponytail_low_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_short_halfup_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_short_layer_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_short_perm_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_short_straight_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_shortcut1_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_shortcut2_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_sidebraid_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_twintail_blonde.svg" class="hair">
+        <img src="assets/page_4/hair/hair_twintailbraid_blonde.svg" class="hair">
+      </div>
+
+      <div class="p4-hair black">
+        <img src="assets/page_4/hair/hair_bundouble_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_buntop_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_buntopbang_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_hippie_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_long_halfup_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_long_halfupperm_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_long_perm_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_long_straight_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_messy_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_mid_straight_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_ponytail_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_ponytail_low_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_short_halfup_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_short_layer_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_short_perm_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_short_straight_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_shortcut1_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_shortcut2_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_sidebraid_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_twintail_black.svg" class="hair">
+        <img src="assets/page_4/hair/hair_twintailbraid_black.svg" class="hair">
+      </div>
+             
+        <!-- ================= 의상 레이어 (⭐ div 구조 유지) ================= -->
+
+        <!-- TOP -->
+        <div class="p4-top">
+         <img src="assets/page_5/top/c1_top_none_tube.svg" class="top">
+         <img src="assets/page_5/top/c2_top_none_halter.svg" class="top">
+         <img src="assets/page_5/top/c3_top_none_t.svg" class="top">
+         <img src="assets/page_5/top/c4_top_short_t_white.svg" class="top">
+         <img src="assets/page_5/top/c5_top_short_t_black.svg" class="top">
+         <img src="assets/page_5/top/c6_top_none_offblouse_white.svg" class="top">
+         <img src="assets/page_5/top/c7_top_short_raglan_pink.svg" class="top">
+         <img src="assets/page_5/top/c8_top_short_raglan_skyblue.svg" class="top">
+         <img src="assets/page_5/top/c9_top_short_overt_white.svg" class="top">
+         <img src="assets/page_5/top/c10_top_short_overt_black.svg" class="top">
+         <img src="assets/page_5/top/c11_top_short_blouse_white.svg" class="top">
+         <img src="assets/page_5/top/c12_top_short_blouse_pink.svg" class="top">
+         <img src="assets/page_5/top/c13_top_short_blouse_skyblue.svg" class="top">
+         <img src="assets/page_5/top/c14_top_short_offt_white.svg" class="top">
+         <img src="assets/page_5/top/c15_top_short_offt_gray.svg" class="top">
+         <img src="assets/page_5/top/c16_top_short_overraglan_white.svg" class="top">
+         <img src="assets/page_5/top/c17_top_short_overshirt_white.svg" class="top">
+         <img src="assets/page_5/top/c18_top_short_overshirt_skyblue.svg" class="top">
+         <img src="assets/page_5/top/c19_top_long_t_white.svg" class="top">
+         <img src="assets/page_5/top/c20_top_long_t_black.svg" class="top">
+         <img src="assets/page_5/top/c21_top_long_overt_white.svg" class="top">
+         <img src="assets/page_5/top/c22_top_long_overt_black.svg" class="top">
+         <img src="assets/page_5/top/c23_top_long_blouse_white.svg" class="top">
+         <img src="assets/page_5/top/c24_top_long_blouse_pink.svg" class="top">
+         <img src="assets/page_5/top/c25_top_long_blouse_skyblue.svg" class="top">
+         <img src="assets/page_5/top/c26_top_long_raglan_gray.svg" class="top">
+         <img src="assets/page_5/top/c27_top_long_raglan_pink.svg" class="top">
+         <img src="assets/page_5/top/c28_top_long_shirt_white.svg" class="top">
+         <img src="assets/page_5/top/c29_top_long_shirt_skyblue.svg" class="top">
+         <img src="assets/page_5/top/c30_top_long_offknit_black.svg" class="top">
+         <img src="assets/page_5/top/c31_top_long_overshirt_white.svg" class="top">
+         <img src="assets/page_5/top/c32_top_long_overshirt_pink.svg" class="top">
+         <img src="assets/page_5/top/c33_top_long_overshirt_navy.svg" class="top">
+         <img src="assets/page_5/top/c34_top_long_cd_red.svg" class="top">
+         <img src="assets/page_5/top/c2_top_none_halter.svg" class="top">
+         <img src="assets/page_5/top/c36_top_long_cropknit_rainbow.svg" class="top">
+         <img src="assets/page_5/top/c37_top_long_cropknit_pink.svg" class="top">
+         <img src="assets/page_5/top/c38_top_long_cropknit_navy.svg" class="top">
+         <img src="assets/page_5/top/c39_top_long_mtm_gray.svg" class="top">
+         <img src="assets/page_5/top/c40_top_long_mtm_wine.svg" class="top">
+         <img src="assets/page_5/top/c41_top_long_hood_white.svg" class="top">
+         <img src="assets/page_5/top/c42_top_long_hood_gray.svg" class="top">
+         <img src="assets/page_5/top/c43_top_long_hood_navy.svg" class="top">
+         <img src="assets/page_5/top/c44_top_long_hood_black.svg" class="top">
+         <img src="assets/page_5/top/c45_top_long_offknit_white.svg" class="top">
+          
+        </div>
+
+        <!-- PANTS -->
+        <div class="p4-pants">
+         <img src="assets/page_5/pants/c1_pants_short_blue.svg" class="pants">
+         <img src="assets/page_5/pants/c2_pants_short_black.svg" class="pants">
+         <img src="assets/page_5/pants/c3_pants_midi_blue.svg" class="pants">
+         <img src="assets/page_5/pants/c4_pants_midi_black.svg" class="pants">
+         <img src="assets/page_5/pants/c5_pants_midi_camogreen.svg" class="pants">
+         <img src="assets/page_5/pants/c6_pants_midi_camopink.svg" class="pants">
+         <img src="assets/page_5/pants/c7_pants_long_blue_jean.svg" class="pants">
+         <img src="assets/page_5/pants/c8_pants_long_black_jean.svg" class="pants">
+         <img src="assets/page_5/pants/c9_pants_long_blue_raggedjean.svg" class="pants">
+         <img src="assets/page_5/pants/c10_pants_long_black_raggedjean.svg" class="pants">
+         <img src="assets/page_5/pants/c11_pants_long_pajama.svg" class="pants">
+         <img src="assets/page_5/pants/c12_pants_long_white_slacks.svg" class="pants">
+         <img src="assets/page_5/pants/c13_pants_long_brown_slacks.svg" class="pants">
+         <img src="assets/page_5/pants/c14_pants_long_black_slacks.svg" class="pants">
+         <img src="assets/page_5/pants/c15_pants_long_corduroy.svg" class="pants">
+         <img src="assets/page_5/pants/c16_pants_long_training.svg" class="pants">
+       
+        </div>
+
+        <!-- SKIRT -->
+        <div class="p4-skirt">
+          <img src="assets/page_5/skirt/c1_skirt_short_tenniswhite.svg" class="skirt">
+          <img src="assets/page_5/skirt/c2_skirt_short_tennisblack.svg" class="skirt">
+          <img src="assets/page_5/skirt/c3_skirt_short_denim.svg" class="skirt">
+          <img src="assets/page_5/skirt/c4_skirt_short_black.svg" class="skirt">
+          <img src="assets/page_5/skirt/c5_skirt_short_balloon.svg" class="skirt">
+          <img src="assets/page_5/skirt/c6_skirt_midi_checkpink.svg" class="skirt">
+          <img src="assets/page_5/skirt/c7_skirt_midi_checkblue.svg" class="skirt">
+          <img src="assets/page_5/skirt/c8_skirt_midi_brown.svg" class="skirt">
+          <img src="assets/page_5/skirt/c9_skirt_midi_purple.svg" class="skirt">
+          <img src="assets/page_5/skirt/c10_skirt_long_denim.svg"class="skirt">
+          <img src="assets/page_5/skirt/c11_skirt_long_corduroy.svg" class="skirt">
+          <img src="assets/page_5/skirt/c12_skirt_long_tennisgrey.svg" class="skirt">
+          <img src="assets/page_5/skirt/c13_skirt_long_tennisblack.svg" class="skirt">
+          <img src="assets/page_5/skirt/c14_skirt_long_frill.svg" class="skirt">
+          <img src="assets/page_5/skirt/c15_skirt_long_check.svg" class="skirt">
+        </div>
+
+        <!-- ONEPIECE -->
+        <div class="p4-onepiece">
+          <img src="assets/page_5/onepiece/c1_onepiece_short_white.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c2_onepiece_short_naivy.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c3_onepiece_short_blue_sleeveless.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c4_onepiece_short_naivy_sleeveless.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c5_onepiece_short_check_frill.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c6_onepiece_long_white.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c7_onepiece_long_naivy.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c8_onepiece_long_blue_sleeveless.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c9_onepiece_long_naivy_sleeveless.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c10_onepiece_short_black.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c11_onepiece_short_white_frill.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c12_onepiece_short_black_frill.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c13_onepiece_midi_white_shirt.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c14_onepiece_midi_blue_shirt.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c15_onepiece_long_blue_strapskirt.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c16_onepiece_long_black_strapskirt.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c17_onepiece_short_blue_strap.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c18_onepiece_short_khaki_strap.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c19_onepiece_long_white_strap.svg" class="onepiece">
+          <img src="assets/page_5/onepiece/c20_onepiece_long_brown_strap.svg" class="onepiece">
+        </div>
+
+        <!-- OUTER -->
+        <div class="p4-outer">
+          <img src="assets/page_5/outer/c1_outer_blue_shirt.svg" class="outer">
+          <img src="assets/page_5/outer/c2_outer_pink_shirt.svg" class="outer">
+          <img src="assets/page_5/outer/c3_outer_green_shirt.svg" class="outer">
+          <img src="assets/page_5/outer/c4_outer_transpar_raincoat.svg" class="outer">
+          <img src="assets/page_5/outer/c5_outer_yellow_raincoat.svg" class="outer">
+          <img src="assets/page_5/outer/c6_outer_blue_windbreak.svg" class="outer">
+          <img src="assets/page_5/outer/c7_outer_pink_windbreak.svg" class="outer">
+          <img src="assets/page_5/outer/c8_outer_black_windbreak.svg" class="outer">
+          <img src="assets/page_5/outer/c9_outer_white_jersey.svg" class="outer">
+          <img src="assets/page_5/outer/c10_outer_black_jersey.svg" class="outer">
+          <img src="assets/page_5/outer/c11_outer_blue_cd.svg" class="outer">
+          <img src="assets/page_5/outer/c12_outer_red_cd.svg" class="outer">
+          <img src="assets/page_5/outer/c13_outer_gray_hoodzip.svg" class="outer">
+          <img src="assets/page_5/outer/c14_outer_brown_hoodzip.svgc13_.svg" class="outer">
+          <img src="assets/page_5/outer/c15_outer_black_hoodzip.svg" class="outer">
+          <img src="assets/page_5/outer/c16_outer_white_shortpadding.svg" class="outer">
+          <img src="assets/page_5/outer/c17_outer_black_shortpadding.svg" class="outer">
+          <img src="assets/page_5/outer/c18_outer_brown_leather.svg" class="outer">
+          <img src="assets/page_5/outer/c19_outer_black_leather.svg" class="outer">
+          <img src="assets/page_5/outer/c20_outer_black_mustang.svg" class="outer">
+          <img src="assets/page_5/outer/c21_outer_white_cape.svg" class="outer">
+          <img src="assets/page_5/outer/c22_outer_gray_cape.svg" class="outer">
+          <img src="assets/page_5/outer/c23_outer_shortcoat.svg" class="outer">
+          <img src="assets/page_5/outer/c24_outer_naivy_shortdufflecoat.svg" class="outer">
+          <img src="assets/page_5/outer/c25_outer_naivy_longdufflecoat.svg" class="outer">
+          <img src="assets/page_5/outer/c26_outer_brown_longdufflecoat.svg" class="outer">
+          <img src="assets/page_5/outer/c27_outer_trench.svg" class="outer">
+          <img src="assets/page_5/outer/c28_outer_gray_longcoat.svg" class="outer">
+          <img src="assets/page_5/outer/c29_outer_black_longcoat.svg" class="outer">
+          <img src="assets/page_5/outer/c30_outer_longpadding.svg" class="outer">
+        </div>
+
+        <!-- SOCKS -->
+        <div class="p4-socks"> 
+          <img src="assets/page_5/socks/c1_socks_short_white.svg" class="socks">
+          <img src="assets/page_5/socks/c2_socks_short_pink.svg" class="socks">
+          <img src="assets/page_5/socks/c3_socks_short_blue.svg" class="socks">
+          <img src="assets/page_5/socks/c4_socks_black.svg" class="socks">
+          <img src="assets/page_5/socks/c5_socks_short_whitelace.svg" class="socks">
+          <img src="assets/page_5/socks/c6_socks_half_white.svg" class="socks">
+          <img src="assets/page_5/socks/c7_socks_half_black.svg" class="socks">
+          <img src="assets/page_5/socks/c8_socks_half_whitelace.svg" class="socks">
+          <img src="assets/page_5/socks/c9_socks_half_blackdot.svg" class="socks">
+          <img src="assets/page_5/socks/c10_socks_long_white.svg" class="socks">
+          <img src="assets/page_5/socks/c11_socks_long_dot.svg" class="socks">
+          <img src="assets/page_5/socks/c12_socks_long_heart.svg" class="socks">
+          <img src="assets/page_5/socks/c13_socks_long_coffee.svg" class="socks">
+          <img src="assets/page_5/socks/c14_socks_long_sheerblack.svg" class="socks">
+        </div>
+
+        <!-- SHOES -->
+        <div class="p4-shoes">
+          <img src="assets/page_5/shoes/c1_shoes_slipper.svg" class="shoes">
+          <img src="assets/page_5/shoes/c2_shoes_crocs_white.svg" class="shoes">
+          <img src="assets/page_5/shoes/c3_shoes_crocs_black.svg" class="shoes">
+          <img src="assets/page_5/shoes/c4_shoes_converse_wine.svg" class="shoes">
+          <img src="assets/page_5/shoes/c5_shoes_converse_navy.svg" class="shoes">
+          <img src="assets/page_5/shoes/c6_shoes_slipper_character.svg" class="shoes">
+          <img src="assets/page_5/shoes/c7_shoes_maryjane_red.svg" class="shoes">
+          <img src="assets/page_5/shoes/c8_shoes_maryjane_black.svg" class="shoes">
+          <img src="assets/page_5/shoes/c9_shoes_sneakers.svg" class="shoes">
+          <img src="assets/page_5/shoes/c10_shoes_conversehigh_wine.svg" class="shoes">
+          <img src="assets/page_5/shoes/c11_shoes_conversehigh_navy.svg" class="shoes">
+          <img src="assets/page_5/shoes/c12_shoes_slipper_indoor.svg" class="shoes">
+          <img src="assets/page_5/shoes/c13_shoes_sandal_brown.svg" class="shoes">
+          <img src="assets/page_5/shoes/c14_shoes_sandal_black.svg" class="shoes">
+          <img src="assets/page_5/shoes/c15_shoes_rainboots_long.svg" class="shoes">
+          <img src="assets/page_5/shoes/c16_shoes_rainboots_mid.svg" class="shoes">
+          <img src="assets/page_5/shoes/c17_shoes_boots_long_black.svg" class="shoes">
+          <img src="assets/page_5/shoes/c18_shoes_boots_mid_brown.svg" class="shoes">
+        </div>
+
+                        <!-- page6 장신구레이어 -->
+
+         <!-- bag -->
+        <div class="p4-bag">
+         <img src="assets/page_6/bag/c1_bag_fleecebag.svg" class="bag">
+         <img src="assets/page_6/bag/c2_bag_mini_white.svg" class="bag">
+         <img src="assets/page_6/bag/c3_bag_mini_pink.svg" class="bag">
+         <img src="assets/page_6/bag/c4_bag_mini_red.svg" class="bag">
+         <img src="assets/page_6/bag/c5_bag_mini_black.svg" class="bag">
+         <img src="assets/page_6/bag/c6_bag_knit.svg" class="bag">
+         <img src="assets/page_6/bag/c7_bag_ecobag_red.svg" class="bag">
+         <img src="assets/page_6/bag/c8_bag_ecobag_blue.svg" class="bag">
+         <img src="assets/page_6/bag/c9_bag_mini_silver.svg" class="bag">
+         <img src="assets/page_6/bag/c10_bag_waistbag.svg" class="bag">
+         <img src="assets/page_6/bag/c11_bag_backpack_red.svg" class="bag">
+         <img src="assets/page_6/bag/c12_bag_backpack_blue.svg" class="bag">
+         <img src="assets/page_6/bag/c13_bag_crossbag.svg" class="bag">     
+        </div>
+
+        <!-- case -->
+        <div class="p4-case">
+          <img src="assets/page_6/case/c1_case_red.svg" class="case">
+          <img src="assets/page_6/case/c2_case_orange.svg" class="case">
+          <img src="assets/page_6/case/c3_case_green.svg" class="case">
+          <img src="assets/page_6/case/c4_case_skyblue.svg" class="case">
+          <img src="assets/page_6/case/c5_case_indigo.svg" class="case">
+          <img src="assets/page_6/case/c6_case_purple.svg" class="case">
+          <img src="assets/page_6/case/c7_case_coral.svg" class="case">
+          <img src="assets/page_6/case/c8_case_pink.svg" class="case">
+          <img src="assets/page_6/case/c9_case_white.svg" class="case">
+          <img src="assets/page_6/case/c10_case_gray.svg"class="case">
+          <img src="assets/page_6/case/c11_case_brown.svg" class="case">
+          <img src="assets/page_6/case/c12_case_black.svg" class="case">
+        </div>
+
+        <!-- hat -->
+        <div class="p4-hat">
+          <img src="assets/page_6/hat/c1_hat_ballcap_white.svg" class="hat">
+          <img src="assets/page_6/hat/c2_hat_ballcap_blue.svg" class="hat">
+          <img src="assets/page_6/hat/c3_hat_bandana_red.svg" class="hat">
+          <img src="assets/page_6/hat/c4_hat_bandana_blue.svg" class="hat">
+          <img src="assets/page_6/hat/c5_hat_catbeanie.svg" class="hat">
+          <img src="assets/page_6/hat/c6_hat_huntingcap.svg" class="hat">
+          <img src="assets/page_6/hat/c7_hat_furhat.svg" class="hat">
+          <img src="assets/page_6/hat/c8_hat_beret.svg" class="hat">
+          <img src="assets/page_6/hat/c9_hat_frog.svg" class="hat">
+          <img src="assets/page_6/hat/c10_hat_beanie.svg" class="hat">
+          <img src="assets/page_6/hat/c11_hat_rabitbeanie.svg" class="hat">
+        </div>
+
+        <!-- face -->
+        <div class="p4-face">
+          <img src="assets/page_6/face/c1_face_sunglasses_white.svg" class="face" data-id="sunglasses_white" data-slot="glasses">
+          <img src="assets/page_6/face/c2_face_sunglasses_black.svg" class="face" data-id="sunglasses_black" data-slot="glasses">
+          <img src="assets/page_6/face/c3_face_glasses_black.svg" class="face"  data-id="glasses_black" data-slot="glasses">
+          <img src="assets/page_6/face/c4_face_glasses_red.svg" class="face" data-id="glasses_red" data-slot="glasses">
+          <img src="assets/page_6/face/c5_face_rabbitmask.svg" class="face" data-id="rabbitmask" data-slot="ears">
+          <img src="assets/page_6/face/c6_face_pandamask.svg" class="face" data-id="pandamask" data-slot="ears" >
+          <img src="assets/page_6/face/c7_face_devil.svg" class="face" data-id="devil" data-slot="wing">
+          <img src="assets/page_6/face/c8_face_angel.svg" class="face" data-id="angel" data-slot="wing">
+          <img src="assets/page_6/face/c9_face_dog.svg" class="face" data-id="dogear" data-slot="ears">
+          <img src="assets/page_6/face/c10_face_hamster.svg" class="face" data-id="hamsterear" data-slot="ears">
+          <img src="assets/page_6/face/c11_face_cat.svg" class="face" data-id="catear" data-slot="ears">
+          <img src="assets/page_6/face/c12_face_rabbit.svg" class="face" data-id="rabbitear" data-slot="ears">
+          <img src="assets/page_6/face/c13_face_piercing.svg" class="face" data-id="piercing" data-slot="headggear">
+          <img src="assets/page_6/face/c14_face_piercing2.svg" class="face" data-id="piercing2" data-slot="headgear">
+          <img src="assets/page_6/face/c15_face_earphone.svg" class="face" data-id="earphone" data-slot="headgear">
+          <img src="assets/page_6/face/c16_face_airpods.svg" class="face" data-id="airpods" data-slot="headgear">
+          <img src="assets/page_6/face/c17_face_eyepatch.svg" class="face" data-id="eyepatch" data-slot="glasses">
+          <img src="assets/page_6/face/c18_face_headphone.svg" class="face" data-id="headphone" data-slot="headgear">
+          <img src="assets/page_6/face/c19_face_earwarmer.svg" class="face" data-id="earwarmer" data-slot="headgear">
+          <img src="assets/page_6/face/c20_face_bandaid.svg" class="face" data-id="bandaid" data-slot="faceect">
+          <img src="assets/page_6/face/c21_face_angry.svg" class="face" data-id="angry" data-slot="faceect">
+          <img src="assets/page_6/face/c22_face_hairpin.svg" class="face" data-id="hairpin" data-slot="faceect">
+          
+        </div>
+
+        <!-- ect -->
+        <div class="p4-ect"> 
+          <img src="assets/page_6/ect/c1_ect_bracelet_silver.svg" class="ect" data-id="bracelet_silver" data-slot="hand-left">
+          <img src="assets/page_6/ect/c2_ect_bracelet_gold.svg" class="ect" data-id="bracelet_gold" data-slot="hand-left">
+          <img src="assets/page_6/ect/c3_ect_book.svg" class="ect" data-id="book" data-slot="hand-right">
+          <img src="assets/page_6/ect/c4_ect_coffee.svg" class="ect" data-id="coffee" data-slot="hand-right">
+          <img src="assets/page_6/ect/c5_ect_laptop.svg" class="ect" data-id="laptop" data-slot="hand-right">
+          <img src="assets/page_6/ect/c6_ect_muffler_white.svg" class="ect" data-id="muffler_white" data-slot="body">
+          <img src="assets/page_6/ect/c7_ect_muffler_red.svg" class="ect" data-id="muffler_red" data-slot="body">
+          <img src="assets/page_6/ect/c8_ect_envelope.svg" class="ect" data-id="envelope" data-slot="hand-right">
+          <img src="assets/page_6/ect/c9_ect_spbag.svg" class="ect" data-id="spbag" data-slot="hand-right">
+          <img src="assets/page_6/ect/c10_ect_spbasket.svg" class="ect" data-id="spbasket" data-slot="hand-right">
+          <img src="assets/page_6/ect/c11_ect_umbrella.svg" class="ect" data-id="umbrella" data-slot="hand-right">
+          <img src="assets/page_6/ect/c12_ect_maltese.svg" class="ect" data-id="maltese" data-slot="hand-right">
+          <img src="assets/page_6/ect/c13_ect_poodle.svg" class="ect" data-id="poodle" data-slot="hand-right">
+          <img src="assets/page_6/ect/c14_ect_cafe.svg" class="ect" data-id="cafe" data-slot="body">
+          <img src="assets/page_6/ect/c15_ect_art.svg" class="ect" data-id="art" data-slot="body">
+          <img src="assets/page_6/ect/c16_ect_skateboard.svg" class="ect"  data-id="skateboard" data-slot="hand-right">
+        </div>
+
+      </div>
+    </div>
+<!-- 강아지 아이콘 -->
+<div class="dog-tip">
+  <img src="assets/page_2/2_dog4.svg" class="dog-icon" />
+  <!-- 말풍선 -->
+  <div class="dog-bubble" id="dogBubble">
+    오늘의 코디 기록하는중...
+  </div>
+</div>
+    <!-- ================= 좌우 버튼 ================= -->
+    <img src="assets/page_4/ui/button_next_left.svg" class="p4-arrow left">
+    <img src="assets/page_4/ui/button_next_right.svg" class="p4-arrow right">
+
+    <!-- ================= 카테고리 아이콘 ================= -->
+    <div class="p4-category-icons">
+
+      <div class="cat-icon bag active">
+        <img src="assets/page_6/ui/icon_bag.svg">
+      </div>
+
+      <div class="cat-icon case">
+        <img src="assets/page_6/ui/icon_case.svg">
+      </div>
+
+      <div class="cat-icon hat">
+        <img src="assets/page_6/ui/icon_hat.svg">
+      </div>
+
+      <div class="cat-icon face">
+        <img src="assets/page_6/ui/icon_face.svg">
+      </div>
+
+      <div class="cat-icon ect">
+        <img src="assets/page_6/ui/icon_ect.svg">
+      </div>
+    </div>
+
+    <!-- ================= 카테고리 박스 ================= -->
+    <div class="p4-category-box">
+      <div class="p4-category-scroll">
+
+        <div class="p4-list bag">
+          <button class="item" data-type="bag" data-id="1">
+            <img src="assets/page_6/s_bag/s1_bag_fleecebag.svg">
+          </button>
+
+          <button class="item" data-type="bag" data-id="2">
+            <img src="assets/page_6/s_bag/s2_bag_mini_white.svg">
+          </button>
+
+          <button class="item" data-type="bag" data-id="3">
+            <img src="assets/page_6/s_bag/s3_bag_mini_pink.svg">
+          </button>
+
+          <button class="item" data-type="bag" data-id="4">
+            <img src="assets/page_6/s_bag/s4_bag_mini_red.svg">
+          </button>
+
+          <button class="item" data-type="bag" data-id="5">
+            <img src="assets/page_6/s_bag/s5_bag_mini_black.svg">
+          </button>
+
+          <button class="item" data-type="bag" data-id="6">
+            <img src="assets/page_6/s_bag/s6_bag_knit.svg">
+          </button>
+          
+          <button class="item" data-type="bag" data-id="7">
+            <img src="assets/page_6/s_bag/s7_bag_ecobag_red.svg">
+          </button>
+          
+          <button class="item" data-type="bag" data-id="8">
+            <img src="assets/page_6/s_bag/s8_bag_ecobag_blue.svg">
+          </button>
+
+          <button class="item" data-type="bag" data-id="9">
+            <img src="assets/page_6/s_bag/s9_bag_mini_silver.svg">
+          </button>
+
+          <button class="item" data-type="bag" data-id="10">
+            <img src="assets/page_6/s_bag/s10_bag_waistbag.svg">
+          </button>
+
+          <button class="item" data-type="bag" data-id="11">
+            <img src="assets/page_6/s_bag/s11_bag_backpack_red.svg">
+          </button>
+
+          <button class="item" data-type="bag" data-id="12">
+            <img src="assets/page_6/s_bag/s12_bag_backpack_blue.svg">
+          </button>
+
+          <button class="item" data-type="bag" data-id="13">
+            <img src="assets/page_6/s_bag/s13_bag_crossbag.svg">
+          </button>
+        
+        </div>
+
+        <div class="p4-list case">
+          <button class="item" data-type="case" data-id="1">
+            <img src="assets/page_6/s_case/s1_case_red.svg">
+          </button>
+
+          <button class="item" data-type="case" data-id="2">
+            <img src="assets/page_6/s_case/s2_case_orange.svg">
+          </button>
+
+          <button class="item" data-type="case" data-id="3">
+            <img src="assets/page_6/s_case/s3_case_green.svg">
+          </button>
+
+          <button class="item" data-type="case" data-id="4">
+            <img src="assets/page_6/s_case/s4_case_skyblue.svg">
+          </button>
+
+          <button class="item" data-type="case" data-id="5">
+            <img src="assets/page_6/s_case/s5_case_indigo.svg">
+          </button>
+
+          <button class="item" data-type="case" data-id="6">
+            <img src="assets/page_6/s_case/s6_case_purple.svg">
+          </button>
+
+          <button class="item" data-type="case" data-id="7">
+            <img src="assets/page_6/s_case/s7_case_coral.svg">
+          </button>
+
+          <button class="item" data-type="case" data-id="8">
+            <img src="assets/page_6/s_case/s8_case_pink.svg">
+          </button>
+
+          <button class="item" data-type="case" data-id="9">
+            <img src="assets/page_6/s_case/s9_case_white.svg">
+          </button>
+
+          <button class="item" data-type="case" data-id="10">
+            <img src="assets/page_6/s_case/s10_case_gray.svg">
+          </button>
+
+          <button class="item" data-type="case" data-id="11">
+            <img src="assets/page_6/s_case/s11_case_brown.svg">
+          </button>
+
+          <button class="item" data-type="case" data-id="12">
+            <img src="assets/page_6/s_case/s12_case_black.svg">
+          </button>
+        </div>
+
+        <div class="p4-list hat">
+
+          <button class="item" data-type="hat" data-id="1">
+            <img src="assets/page_6/s_hat/s1_hat_ballcap_white.svg">
+          </button>
+
+          <button class="item" data-type="hat" data-id="2">
+            <img src="assets/page_6/s_hat/s2_hat_ballcap_blue_.svg">
+          </button>
+
+          <button class="item" data-type="hat" data-id="3">
+            <img src="assets/page_6/s_hat/s3_hat_bandana_red.svg">
+          </button>
+
+          <button class="item" data-type="hat" data-id="4">
+            <img src="assets/page_6/s_hat/s4_hat_bandana_blue.svg">
+          </button>
+
+          <button class="item" data-type="hat" data-id="5">
+            <img src="assets/page_6/s_hat/s5_hat_catbeanie.svg">
+          </button>
+
+          <button class="item" data-type="hat" data-id="6">
+            <img src="assets/page_6/s_hat/s6_hat_huntingcap.svg">
+          </button>
+
+          <button class="item" data-type="hat" data-id="7">
+            <img src="assets/page_6/s_hat/s7_hat_furhat.svg">
+          </button>
+
+          <button class="item" data-type="hat" data-id="8">
+            <img src="assets/page_6/s_hat/s8_hat_beret.svg">
+          </button>
+
+          <button class="item" data-type="hat" data-id="9">
+            <img src="assets/page_6/s_hat/s9_hat_frog.svg">
+          </button>
+
+          <button class="item" data-type="hat" data-id="10">
+            <img src="assets/page_6/s_hat/s10_hat_beanie.svg">
+          </button>
+
+          <button class="item" data-type="hat" data-id="11">
+            <img src="assets/page_6/s_hat/s11_hat_rabitbeanie.svg">
+          </button>
+        </div>
+
+        <div class="p4-list face">
+          <button class="item" data-type="face" data-id="sunglasses_white" data-slot="glasses" onclick="selectFace(this)">
+            <img src="assets/page_6/s_face/s1_face_sunglasses_white.svg">
+          </button>
+          
+          <button class="item" data-type="face" data-id="sunglasses_black" data-slot="glasses" onclick="selectFace(this)">
+            <img src="assets/page_6/s_face/s2_face_sunglasses_black.svg">
+          </button>
+
+          <button class="item" data-type="face" data-id="glasses_black" data-slot="glasses" onclick="selectFace(this)">
+            <img src="assets/page_6/s_face/s3_face_glasses_black.svg">
+          </button>
+          
+          <button class="item" data-type="face" data-id="glasses_red" data-slot="glasses"  onclick="selectFace(this)">
+            <img src="assets/page_6/s_face/s4_face_glasses_red.svg">
+          </button>
+
+          <button class="item" data-type="face" data-id="rabbitmask" data-slot="ears" onclick="selectFace(this)">
+            <img src="assets/page_6/s_face/s5_face_rabbitmask.svg">
+          </button>
+          
+          <button class="item" data-type="face" data-id="pandamask" data-slot="ears" onclick="selectFace(this)">
+            <img src="assets/page_6/s_face/s6_face_pandamask.svg">
+          </button>
+
+          <button class="item" data-type="face" data-id="devil" data-slot="wing" onclick="selectFace(this)">
+            <img src="assets/page_6/s_face/s7_face_devil.svg">
+          </button>
+          
+          <button class="item" data-type="face" data-id="angel" data-slot="wing" onclick="selectFace(this)">
+            <img src="assets/page_6/s_face/s8_face_angel.svg">
+          </button>
+          
+          <button class="item" data-type="face" data-id="dogear" data-slot="ears" onclick="selectFace(this)">
+            <img src="assets/page_6/s_face/s9_face_dog.svg">
+          </button>
+
+          <button class="item" data-type="face" data-id="hamsterear" data-slot="ears" onclick="selectFace(this)">
+            <img src="assets/page_6/s_face/s10_face_hamster.svg">
+          </button>
+          
+          <button class="item" data-type="face" data-id="catear" data-slot="ears" onclick="selectFace(this)">
+            <img src="assets/page_6/s_face/s11_face_cat.svg">
+          </button>
+
+          <button class="item" data-type="face" data-id="rabbitear" data-slot="ears" onclick="selectFace(this)">
+            <img src="assets/page_6/s_face/s12_face_rabbit.svg">
+          </button>
+          
+          <button class="item" data-type="face" data-id="piercing" data-slot="headggear" onclick="selectFace(this)">
+            <img src="assets/page_6/s_face/s13_face_piercing.svg">
+          </button>
+          
+          <button class="item" data-type="face" data-id="piercing2" data-slot="headgear" onclick="selectFace(this)">
+            <img src="assets/page_6/s_face/s14_face_piercing2.svg">
+          </button>
+
+          <button class="item" data-type="face" data-id="earphone" data-slot="headgear" onclick="selectFace(this)">
+            <img src="assets/page_6/s_face/s15_face_earphone.svg">
+          </button>
+
+          <button class="item" data-type="face" data-id="airpods" data-slot="headgear" onclick="selectFace(this)">
+            <img src="assets/page_6/s_face/s16_face_airpods.svg">
+          </button>
+
+          <button class="item" data-type="face" data-id="eyepatch" data-slot="glasses" onclick="selectFace(this)">
+            <img src="assets/page_6/s_face/s17_face_eyepatch.svg">
+          </button>
+
+          <button class="item" data-type="face" data-id="headphone" data-slot="headgear" onclick="selectFace(this)">
+            <img src="assets/page_6/s_face/s18_face_headphone.svg">
+          </button>
+
+          <button class="item" data-type="face" data-id="earwarmer" data-slot="headgear" onclick="selectFace(this)">
+            <img src="assets/page_6/s_face/s19_face_earwarmer.svg">
+          </button>
+
+          <button class="item" data-type="face" data-id="bandaid" data-slot="faceect" onclick="selectFace(this)">
+            <img src="assets/page_6/s_face/s20_face_bandaid.svg">
+          </button>
+
+          <button class="item" data-type="face" data-id="angry" data-slot="faceect" onclick="selectFace(this)">
+            <img src="assets/page_6/s_face/s21_face_angry.svg">
+          </button>
+
+          <button class="item" data-type="face" data-id="hairpin" data-slot="faceect" onclick="selectFace(this)">
+            <img src="assets/page_6/s_face/s22_face_hairpin.svg">
+          </button>
+        </div>
+
+        <div class="p4-list ect">
+
+          <button class="item" data-type="ect" data-id="bracelet_silver" data-slot="hand-left" onclick="selectEct(this)">
+            <img src="assets/page_6/s_ect/s1_ect_bracelet_silver.svg">
+          </button>
+
+          <button class="item" data-type="ect" data-id="bracelet_gold" data-slot="hand-left" onclick="selectEct(this)">
+            <img src="assets/page_6/s_ect/s2_ect_bracelet_gold.svg">
+          </button>
+
+          <button class="item" data-type="ect" data-id="book" data-slot="hand-right" onclick="selectEct(this)">
+            <img src="assets/page_6/s_ect/s3_ect_book.svg">
+          </button>
+
+          <button class="item" data-type="ect" data-id="coffee" data-slot="hand-right" onclick="selectEct(this)">
+            <img src="assets/page_6/s_ect/s4_ect_coffee.svg">
+          </button>
+
+          <button class="item" data-type="ect" data-id="laptop" data-slot="hand-right" onclick="selectEct(this)">
+            <img src="assets/page_6/s_ect/s5_ect_laptop.svg">
+          </button>
+
+          <button class="item" data-type="ect" data-id="muffler_white" data-slot="body" onclick="selectEct(this)">
+            <img src="assets/page_6/s_ect/s6_ect_muffler_white.svg">
+          </button>
+
+          <button class="item" data-type="ect" data-id="muffler_red" data-slot="body" onclick="selectEct(this)">
+            <img src="assets/page_6/s_ect/s7_ect_muffler_red.svg">
+          </button>
+
+          <button class="item" data-type="ect" data-id="envelope" data-slot="hand-right" onclick="selectEct(this)">
+            <img src="assets/page_6/s_ect/s8_ect_envelope.svg">
+          </button>
+          
+          <button class="item" data-type="ect" data-id="spbag" data-slot="hand-right" onclick="selectEct(this)">
+            <img src="assets/page_6/s_ect/s9_ect_spbag.svg">
+          </button>
+
+          <button class="item" data-type="ect" data-id="spbasket" data-slot="hand-right" onclick="selectEct(this)">
+            <img src="assets/page_6/s_ect/s10_ect_spbasket.svg">
+          </button>
+
+          <button class="item" data-type="ect" data-id="umbrella" data-slot="hand-right" onclick="selectEct(this)">
+            <img src="assets/page_6/s_ect/s11_ect_umbrella.svg">
+          </button>
+
+          <button class="item" data-type="ect" data-id="maltese" data-slot="hand-right" onclick="selectEct(this)">
+            <img src="assets/page_6/s_ect/s12_ect_maltese.svg">
+          </button>
+
+          <button class="item" data-type="ect" data-id="poodle" data-slot="hand-right" onclick="selectEct(this)">
+            <img src="assets/page_6/s_ect/s13_ect_poodle.svg">
+          </button>
+
+          <button class="item" data-type="ect" data-id="cafe" data-slot="body" onclick="selectEct(this)">
+            <img src="assets/page_6/s_ect/s14_ect_cafe.svg">
+          </button>
+
+          <button class="item" data-type="ect" data-id="art" data-slot="body" onclick="selectEct(this)">
+            <img src="assets/page_6/s_ect/s15_ect_art.svg">
+          </button>
+
+          <button class="item" data-type="ect" data-id="skateboard" data-slot="hand-right" onclick="selectEct(this)">
+            <img src="assets/page_6/s_ect/s16_ect_skateboard.svg">
+          </button>
+        
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- ================= PAGE 7 ================= -->
+<div class="screen page7">
+
+  <!-- 체크 배경 -->
+  <img src="assets/page_main/check.svg" class="bg-check">
+
+  <!-- ================= 노트 영역 ================= -->
+  <div class="p7-note-area">
+
+    <!-- 노트 배경 -->
+    <img src="assets/page_2/note.svg" class="p7-note-bg">
+
+
+    <!-- 발밑 그림자 -->
+    <div class="p7-character-shadow"></div>
+
+    <!-- 노트 텍스트 -->
+    <div class="p7-note-content">
+
+      <!-- 날짜 -->
+      <div class="p7-date" id="p7TodayDate"></div>
+      <div class="p7-date-line"></div>
+
+      <!-- 저장하기 버튼 -->
+      <button class="p7-save-btn" id="p7SaveBtn">저장하기</button>
+
+      <!-- 타이틀 -->
+      <div class="p5-title">
+        <div class="p5-name-pill">
+          <span id="p7UserName" class="p5-name-text">이름</span>
+        </div>
+        <span class="p5-title-text">의 오오티디</span>
+      </div>
+    </div>
+    <!-- 캐릭터 영역 -->
+    <div class="p7-character-area" id="p7CharacterArea">
+      <!-- JS에서 page6 캐릭터 복사 -->
+    </div>
+
+    <!-- 스티커 붙는 영역 -->
+    <div class="p7-sticker-area" id="p7StickerArea"></div>
+
+  </div>
+
+  <!-- ================= 스티커 컨트롤 패널 (노트 바깥 고정) ================= -->
+  <div class="p7-sticker-panel" id="p7StickerPanel">
+     <button class="panel-btn btn-plus"><span>+</span></button>
+  <button class="panel-btn btn-minus"><span>-</span></button>
+  <button class="panel-btn btn-rotate"><span>⟳</span></button>
+  </div>
+
+  <!-- ================= 스티커 카테고리 박스 ================= -->
+  <div class="p7-sticker-box">
+
+    <div class="p7-sticker-grid">
+
+      <button class="p7-sticker-item-big" data-sticker="sticker1">
+        <img src="assets/page_7/sticker/cherry.svg">
+      </button>
+
+      <button class="p7-sticker-item" data-sticker="sticker2">
+        <img src="assets/page_7/sticker/mushroom.svg">
+      </button>
+
+      <button class="p7-sticker-item" data-sticker="sticker3">
+        <img src="assets/page_7/sticker/clover.svg">
+      </button>
+
+      <button class="p7-sticker-item" data-sticker="sticker4">
+        <img src="assets/page_7/sticker/tomato.svg">
+      </button>
+
+      <button class="p7-sticker-item-big" data-sticker="sticker5">
+        <img src="assets/page_7/sticker/heartwing.svg">
+      </button>
+
+      <button class="p7-sticker-item-big" data-sticker="sticker6">
+        <img src="assets/page_7/sticker/star.svg">
+      </button>
+
+      <button class="p7-sticker-item-big" data-sticker="sticker7">
+        <img src="assets/page_7/sticker/music.svg">
+      </button>
+
+      <button class="p7-sticker-item" data-sticker="sticker8">
+        <img src="assets/page_7/sticker/twinkle.svg">
+      </button>
+
+      <button class="p7-sticker-item" data-sticker="sticker9">
+        <img src="assets/page_7/sticker/sunny.svg">
+      </button>
+
+      <button class="p7-sticker-item" data-sticker="sticker10">
+        <img src="assets/page_7/sticker/cloudy.svg">
+      </button>
+
+      <button class="p7-sticker-item" data-sticker="sticker11">
+        <img src="assets/page_7/sticker/rain.svg">
+      </button>
+
+      <button class="p7-sticker-item" data-sticker="sticker12">
+        <img src="assets/page_7/sticker/snow.svg">
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- ================= PAGE 8 ================= -->
+<div class="screen page8">
+
+  <!-- 📸 캡쳐 전용 래퍼 -->
+  <div id="captureWrapper">
+
+    <!-- 체크 배경 -->
+    <img src="assets/page_main/check.svg" class="bg-check">
+
+    <!-- 홈 버튼 : 최상단 레이어 -->
+    <svg id="homeBtn" class="home-icon no-capture" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M3 11L12 3L21 11" />
+      <path d="M5 10V20H19V10" />
+      <path d="M9 20V14H15V20" />
+    </svg>
+
+    <!-- ================= 노트 영역 ================= -->
+    <div class="p8-note-area" id="p8Note">
+
+      <img src="assets/page_2/note.svg" class="p8-note-bg">
+
+      <div class="p8-character-shadow"></div>
+
+      <img src="assets/page_8/pencil8.svg" class="p8-pencil">
+
+      <div class="p8-note-content">
+        <div class="p8-date" id="p8TodayDate"></div>
+        <div class="p8-date-line"></div>
+
+        <div class="p5-title">
+          <div class="p5-name-pill">
+            <span id="p8UserName" class="p5-name-text">이름</span>
+          </div>
+          <span class="p5-title-text">의 오오티디</span>
+        </div>
+      </div>
+
+      <div class="p8-random-wrap">
+        <img src="assets/page_3/dog.svg" class="p8-dog">
+        <p class="p8-random-text" id="p8RandomText"></p>
+      </div>
+
+      <p class="p8-fixed-text" id="p8FixedText"></p>
+    </div>
+
+    <div class="page8-content">
+      <div class="p8-character-area" id="p8CharacterArea"></div>
+      <div class="p8-sticker-area" id="p8StickerArea"></div>
+    </div>
+
+    <!-- 📸 캡쳐용 워터마크 로고 -->
+    <img src="assets/page_8/page8_logo.png" id="captureLogo" />
+
+  </div>
+
+
+  <!-- ================= 타이핑 영역 (캡쳐 제외) ================= -->
+  <div class="typing-area page8-typing">
+
+    <div class="p8-random-line typing-line center" id="p8RandomLine">
+      <span class="typing-text" id="p8t1"></span>
+      <img src="assets/page_8/p8_dogs 1.png" class="typing-emoji" id="p8e1" />
+      <img src="assets/page_8/p8_dogs 5.png" class="typing-emoji" id="p8e2" />
+      <img src="assets/page_8/p8_dogs 6.png" class="typing-emoji" id="p8e4" />
+    </div>
+
+    <div class="typing-gap"></div>
+
+    <div class="p8-fixed-group no-capture">
+      <div class="p8-fixed-line"><span class="typing-text" id="p8t2"></span></div>
+      <div class="p8-fixed-line"><span class="typing-text" id="p8t3"></span></div>
+      <div class="p8-fixed-line"><span class="typing-text" id="p8t4"></span></div>
+    </div>
+
+  </div>
+
+  <!-- 저장 버튼 -->
+  <div class="p8-save-buttons no-capture">
+    <button id="saveCharacterBtn" class="p8-save-btn-outline">캐릭터 저장</button>
+    <button id="savePageBtn" class="p8-save-btn-outline">전체페이지 저장</button>
+  </div>
+
+</div>
+
+
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
