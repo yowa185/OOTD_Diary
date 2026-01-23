@@ -87,7 +87,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       goTo("page3");
-      requestAnimationFrame(() => enterPage3());
     });
   }
 
@@ -178,7 +177,6 @@ function startTypingPage2() {
 }
 // page3 진입
 function enterPage3(){
-  
   const guide = document.getElementById("page3Guide");
   if(guide){
     guide.style.display = "flex";  // ⭐ 진입 시 안내 표시
@@ -263,9 +261,6 @@ function clearFaceStateForNewSession() {
    ⭐ PAGE4 진입 (최종 안정)
 ===================== */
 function enterPage4() {
-  const guide = document.getElementById("page4Guide");
-  if(guide){
-    guide.style.display = "flex";}
 
   /* ===== 이름 ===== */
   const nameEl =
@@ -290,6 +285,12 @@ function enterPage4() {
     under.src = `assets/page_3/character/underwear_basic.svg`;
     under.style.display = "block";
   }
+
+   /* ⭐⭐⭐ 여기 추가 ⭐⭐⭐ */
+   const guide = document.getElementById("page4Guide");
+   if (guide) {
+     guide.style.display = "flex";
+   }
 
   /* =====================
      ⭐ 커스터마이즈 안 했을 때만 초기화
