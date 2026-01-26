@@ -2735,3 +2735,7 @@ img[src=""] { display:none!important; }
 
   z-index: 200;
 }
+
+.p4-face img[data-id="maskpack"]{
+  z-index: -1; /* 낮게 */
+}
